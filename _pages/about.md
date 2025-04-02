@@ -21,6 +21,9 @@ I am a 3rd year Master student in China Film High Tech Research Institute at Bei
 
 <!--My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).-->
 
+# 📖 Educations
+- *2022.09 - 2025.07 (now)*, Master, Beijing Film Academy, Beijing. 
+- *2018.09 - 2022.06*, undergraduate, Beijing Film Academy, Beijing.
 
 # 🔥 News
 - *2025.04*: Nothing new really... 
@@ -42,13 +45,6 @@ I am a 3rd year Master student in China Film High Tech Research Institute at Bei
 
 - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
 
-# 🎖 Honors and Awards
-- *2024.12* National Scholarship (Top 3%)
-
-# 📖 Educations
-- *2022.09 - 2025.07 (now)*, China Film High Tech Research Institute, Beijing Film Academy. 
-- *2018.09 - 2022.06*, Digital Film and Television Technology, Beijing Film Academy. 
-
 # 💻 Projects
 - *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
 
@@ -65,4 +61,6 @@ I am a 3rd year Master student in China Film High Tech Research Institute at Bei
 </div>
 </div>
 
+# 🎖 Honors and Awards
+- *2024.12* National Scholarship (Top 3%)
 - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
