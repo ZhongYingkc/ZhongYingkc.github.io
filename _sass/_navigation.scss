@@ -260,10 +260,13 @@
   .site-logo {
     display: flex;
     align-items: center;
-    padding: 0.5rem 0;
+    padding-top: 0.5rem;
+    padding-right: 0;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
 
     img {
-      max-height: 40px;
+      max-height: 50px;
       width: auto;
     }
   }
