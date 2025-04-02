@@ -1,17 +1,12 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Wing's'",
+    "short_name": "Wing's",
     "icons": [
        {
-          "src": "/android-chrome-192x192.png",
-          "sizes": "192x192",
+          "src": "/wingicon.png",
+          "sizes": "200x200",
           "type": "image/png"
-       },
-       {
-        "src": "/android-chrome-512x512.png",
-        "sizes": "512x512",
-        "type": "image/png"
-        }
+       }
     ],
     "theme_color": "#FFFFFF",
     "background_color": "#FFFFFF",
