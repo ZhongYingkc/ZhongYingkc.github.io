@@ -18,6 +18,7 @@
     opacity: 1;
     -webkit-transition: opacity 0.2s ease-in-out;
             transition: opacity 0.2s ease-in-out;
+    padding-right: 2em;  /* 添加这行，增加右侧间距 */
 
     &:hover {
       opacity: 1;
