@@ -28,7 +28,7 @@ My research interets include Human-Computer Interaction and eXtended Reality. I 
 - *2018.09 - 2022.06*, undergraduate, Beijing Film Academy, Beijing.
 
 # 🔥 News
-- *2025.04*: Nothing new really... 
+- *2024.03*: Nothing new really... 
 <!--- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. -->
 
 # 📝 Publications 

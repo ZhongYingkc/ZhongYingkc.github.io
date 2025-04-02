@@ -21,9 +21,9 @@ google_scholar_stats_use_cdn : true
 
 # Site Author
 author:
-  name             : "Ying (Wing) Zhong"
+  name             : "钟颖 Ying (Wing) Zhong"
   avatar           : "images/avatar.png"
-  bio              : "Master student at Beijing Film Academy. Incoming PhD student at Indiana University Indianapolis."
+  bio              : "Incoming PhD student at Indiana University Indianapolis"
   location         : "Beijing, China"
 #  employer         :
 #  pubmed           : 
@@ -40,7 +40,7 @@ author:
   github           : # e.g., "github username"
 #  google_plus      :
 #  keybase          :
-  instagram        :
+  instagram        : "https://www.instagram.com/aroastedchicken/"
 #  impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
 #  lastfm           :
   linkedin         : # e.g., "linkedin username"
