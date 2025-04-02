@@ -43,13 +43,13 @@ I am a 3rd year Master student in China Film High Tech Research Institute at Bei
 - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
 
 # 🎖 Honors and Awards
-- *2024.12* National Scholarship 
+- *2024.12* National Scholarship (Top 3%)
 
 # 📖 Educations
 - *2022.09 - 2025.07 (now)*, China Film High Tech Research Institute, Beijing Film Academy. 
-- *2015.09 - 2019.06*, Digital Film and Television Technology, Beijing Film Academy. 
+- *2018.09 - 2022.06*, Digital Film and Television Technology, Beijing Film Academy. 
 
-# 💬 Invited Talks
+# 🎥 Projects in Film School
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
 
