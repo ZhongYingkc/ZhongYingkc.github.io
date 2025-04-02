@@ -24,8 +24,8 @@ My research interets include Human-Computer Interaction and eXtended Reality. I 
 <!--My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).-->
 
 # 📖 Educations
-- *2022.09 - 2025.07 (now)*, Master, Beijing Film Academy, Beijing. 
-- *2018.09 - 2022.06*, Undergraduate, Beijing Film Academy, Beijing.
+- *2022.09 - 2025.07 (now)*, MA, Beijing Film Academy, Beijing. 
+- *2018.09 - 2022.06*, BEng, Beijing Film Academy, Beijing.
 
 # 🔥 News
 - *2024.03*: Nothing new really... 
@@ -51,18 +51,57 @@ My research interets include Human-Computer Interaction and eXtended Reality. I 
 - *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
 
 # 🎥 Works in Film School
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Dome 2020</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+[the belief]
 
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
-
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+[**Video Presentation**](https://www.bilibili.com/video/BV1zj421d72z/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- Immersive Video | Dome | CGI Animation | Notch | Hecos
 </div>
 </div>
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Dome 2021</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[*BFA* in the Hemsiphere]
+
+[**Video Presentation**](https://www.bilibili.com/video/BV1zj421d72z/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- Immersive Video | Dome | Timelapse Photography | Color Grading | Hecos
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Mapping 2020</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[the globe can be a tower]
+
+[**Video Presentation**](https://www.bilibili.com/video/BV1zj421d72z/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> 
+- Mapping | CGI Animation | C4D | Hecos
+- Inspired by the song of *Wutiaoren*.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CGI Animation 2023</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[the beginning]
+
+[**Video Presentation**](https://www.bilibili.com/video/BV1Q2421P7oK/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> 
+- CGI Animation | Unreal Engine | Virtual Environment Lighting | Shader
+- Inspired by *Rurouni Kenshin: The Beginning*.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Timelapse Photography 2019</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Metropolitan]
+
+[**Video Presentation**](https://www.bilibili.com/video/BV1cm411C71Q/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> 
+- Timelapse Photography | Color Grading | Editing
+</div>
+</div>
 
 # 🎖 Honors and Awards
 - *2024.12* National Scholarship (Top 3%)
