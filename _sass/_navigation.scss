@@ -176,6 +176,8 @@
   position: relative;
   min-width: 250px;
   background: $background-color;
+  display: flex;           /* 添加这行 */
+  justify-content: flex-end;
 
   a {
     display: block;
