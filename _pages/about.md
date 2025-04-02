@@ -16,7 +16,7 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
-# Hi, it's Wing <img src="/images/wing.svg" alt="Wing Logo" width="4%">
+# Hi, it's Wing <img src="/images/wing.svg" alt="Wing Logo" width="3%">
 I am a 3rd year Master student in China Film High Tech Research Institute at Beijing Film Academy. Prior to my Master’s program, I received my BEng in Digtial Media Technology from Beijing Film Academy. I am currently working with [Dr. Feilin Han](http://feilinh.cn) in Virtual Reality Lab . 
 
 My research interets include Human-Computer Interaction and eXtended Reality. I focus on user perception and interaction design in immersive environments.
