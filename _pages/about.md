@@ -53,7 +53,7 @@ My research interets include Human-Computer Interaction and eXtended Reality. I 
 **the belief**
 
 [**Video Presentation**](https://www.bilibili.com/video/BV1zj421d72z/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Immersive Video  Dome  CGI Animation  Notch  Hecos
+- Immersive Video &#124; Dome, CGI Animation, Notch, Hecos
 </div>
 </div>
 
@@ -63,7 +63,7 @@ My research interets include Human-Computer Interaction and eXtended Reality. I 
 ***BFA* in the Hemsiphere**
 
 [**Video Presentation**](https://www.bilibili.com/video/BV1zj421d72z/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Immersive Video  Dome  Timelapse Photography  Color Grading  Hecos
+- Immersive Video `|` Dome  Timelapse Photography  Color Grading  Hecos
 </div>
 </div>
 
@@ -73,7 +73,7 @@ My research interets include Human-Computer Interaction and eXtended Reality. I 
 **the globe can be a tower**
 
 [**Video Presentation**](https://www.bilibili.com/video/BV1zj421d72z/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> 
-- Mapping  CGI Animation  C4D | Hecos
+- Mapping  CGI Animation  C4D  Hecos
 - Inspired by the song of *Wutiaoren*.
 </div>
 </div>
