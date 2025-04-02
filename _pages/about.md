@@ -17,7 +17,8 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 # Hi, it's Wing🪽
-I am a 3rd year Master student in China Film High Tech Research Institute at Beijing Film Academy. Prior to my Master’s program, I received my BEng in Digtial Media Technology from Beijing Film Academy. I am currently working with Dr. Feilin Han in Virtual Reality Lab. 
+I am a 3rd year Master student in China Film High Tech Research Institute at Beijing Film Academy. Prior to my Master’s program, I received my BEng in Digtial Media Technology from Beijing Film Academy. I am currently working with [Dr. Feilin Han](http://feilinh.cn) in Virtual Reality Lab . 
+
 My research interets include Human-Computer Interaction and eXtended Reality. I focus on user experience and interaction design in immersive environments.
 
 <!--My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).-->
