@@ -31,7 +31,7 @@ My research interets include Human-Computer Interaction and eXtended Reality. I 
 - *2024.03*: Nothing new really... 
 <!--- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. -->
 
-# 📝 Publications 
+# 💡 Projects 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICME 2024</div><img src='images/handCS.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -47,37 +47,34 @@ My research interets include Human-Computer Interaction and eXtended Reality. I 
 
 <!--- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**-->
 
-# 💻 Projects
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
-
 # 🎥 Works in Film School
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Dome 2020</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[the belief]
+**the belief**
 
 [**Video Presentation**](https://www.bilibili.com/video/BV1zj421d72z/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Immersive Video | Dome | CGI Animation | Notch | Hecos
+- Immersive Video  Dome  CGI Animation  Notch  Hecos
 </div>
 </div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Dome 2021</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[*BFA* in the Hemsiphere]
+***BFA* in the Hemsiphere**
 
 [**Video Presentation**](https://www.bilibili.com/video/BV1zj421d72z/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Immersive Video | Dome | Timelapse Photography | Color Grading | Hecos
+- Immersive Video  Dome  Timelapse Photography  Color Grading  Hecos
 </div>
 </div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Mapping 2020</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[the globe can be a tower]
+**the globe can be a tower**
 
 [**Video Presentation**](https://www.bilibili.com/video/BV1zj421d72z/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> 
-- Mapping | CGI Animation | C4D | Hecos
+- Mapping  CGI Animation  C4D | Hecos
 - Inspired by the song of *Wutiaoren*.
 </div>
 </div>
@@ -85,10 +82,10 @@ My research interets include Human-Computer Interaction and eXtended Reality. I 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CGI Animation 2023</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[the beginning]
+**the beginning**
 
 [**Video Presentation**](https://www.bilibili.com/video/BV1Q2421P7oK/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> 
-- CGI Animation | Unreal Engine | Virtual Environment Lighting | Shader
+- CGI Animation  Unreal Engine  Virtual Environment Lighting  Shader
 - Inspired by *Rurouni Kenshin: The Beginning*.
 </div>
 </div>
@@ -96,10 +93,10 @@ My research interets include Human-Computer Interaction and eXtended Reality. I 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Timelapse Photography 2019</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Metropolitan]
+**Metropolitan**
 
 [**Video Presentation**](https://www.bilibili.com/video/BV1cm411C71Q/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> 
-- Timelapse Photography | Color Grading | Editing
+- Timelapse Photography  Color Grading  Editing
 </div>
 </div>
 
