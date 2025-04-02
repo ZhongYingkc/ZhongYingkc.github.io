@@ -24,7 +24,7 @@ My research interets include Human-Computer Interaction and eXtended Reality. I 
 <!--My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).-->
 
 # 📖 Educations
-- *2022.09 - 2025.07 (now)*, MA, Beijing Film Academy, Beijing. 
+- *2022.09 - 2025.07 (Expected)*, MA, Beijing Film Academy, Beijing. 
 - *2018.09 - 2022.06*, BEng, Beijing Film Academy, Beijing.
 
 # 🔥 News
@@ -46,7 +46,7 @@ My research interets include Human-Computer Interaction and eXtended Reality. I 
 
 <!--- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**-->
 
-# 🎥 Works in Film School
+# 🎥 Digital Media
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Dome 2020</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
