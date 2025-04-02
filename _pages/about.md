@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "🪽"
+title: "Wing🪽"
 excerpt: ""
 author_profile: true
 redirect_from: 
@@ -25,7 +25,7 @@ My research interets include Human-Computer Interaction and eXtended Reality. I 
 
 # 📖 Educations
 - *2022.09 - 2025.07 (now)*, Master, Beijing Film Academy, Beijing. 
-- *2018.09 - 2022.06*, undergraduate, Beijing Film Academy, Beijing.
+- *2018.09 - 2022.06*, Undergraduate, Beijing Film Academy, Beijing.
 
 # 🔥 News
 - *2024.03*: Nothing new really... 
