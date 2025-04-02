@@ -53,7 +53,7 @@ My research interets include Human-Computer Interaction and eXtended Reality. I 
 **the belief**
 
 [**Video Presentation**](https://www.bilibili.com/video/BV1zj421d72z/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Immersive Video &#124; Dome, CGI Animation, Notch, Hecos
+- Immersive Video &#124; Dome &#124; CGI Animation &#124; Notch &#124; Hecos
 </div>
 </div>
 
@@ -63,7 +63,7 @@ My research interets include Human-Computer Interaction and eXtended Reality. I 
 ***BFA* in the Hemsiphere**
 
 [**Video Presentation**](https://www.bilibili.com/video/BV1zj421d72z/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Immersive Video `|` Dome  Timelapse Photography  Color Grading  Hecos
+- Immersive Video &#124; Dome &#124; Timelapse Photography &#124; Color Grading &#124; Hecos
 </div>
 </div>
 
@@ -73,7 +73,7 @@ My research interets include Human-Computer Interaction and eXtended Reality. I 
 **the globe can be a tower**
 
 [**Video Presentation**](https://www.bilibili.com/video/BV1zj421d72z/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> 
-- Mapping  CGI Animation  C4D  Hecos
+- Mapping &#124; CGI Animation &#124; C4D &#124; Hecos
 - Inspired by the song of *Wutiaoren*.
 </div>
 </div>
@@ -84,7 +84,7 @@ My research interets include Human-Computer Interaction and eXtended Reality. I 
 **the beginning**
 
 [**Video Presentation**](https://www.bilibili.com/video/BV1Q2421P7oK/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> 
-- CGI Animation  Unreal Engine  Virtual Environment Lighting  Shader
+- CGI Animation &#124; Unreal Engine &#124; Virtual Environment Lighting &#124; Shader
 - Inspired by *Rurouni Kenshin: The Beginning*.
 </div>
 </div>
@@ -95,7 +95,7 @@ My research interets include Human-Computer Interaction and eXtended Reality. I 
 **Metropolitan**
 
 [**Video Presentation**](https://www.bilibili.com/video/BV1cm411C71Q/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> 
-- Timelapse Photography  Color Grading  Editing
+- Timelapse Photography &#124; Color Grading &#124; Editing
 </div>
 </div>
 
