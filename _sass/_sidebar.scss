@@ -150,6 +150,7 @@
   margin: 0;
 
   @include breakpoint($large) {
+    font-size: $type-size-3;
     display: block;
     width: 100%;
     padding-left: 0;
