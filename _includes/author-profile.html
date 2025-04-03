@@ -214,6 +214,16 @@
       {% if author.wikipedia %}
         <a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i></a>
       {% endif %}
+      {% if author.news %}
+      <div class="author__news">
+        <h3>🔥 News</h3>
+        <ul>
+          {% for item in author.news %}
+            <li><em>{{ item.date }}</em>: {{ item.content }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
     </div>
   </div>
 </div>
