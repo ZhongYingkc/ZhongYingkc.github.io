@@ -1,11 +1,11 @@
 ---
-permalink: /digitalarts/
+permalink: /digital-arts/
 title: "digital arts"
 excerpt: ""
 author_profile: true
-redirect_from: 
-  - /digitalarts/
-  - /digitalarts.html
+<!--redirect_from: -->
+<!--  - /digital-arts/-->
+<!--  - /digital-arts.html-->
 ---
 
 {% if site.google_scholar_stats_use_cdn %}
