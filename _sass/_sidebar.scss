@@ -146,6 +146,16 @@
   }
 }
 
+.author__news {
+  margin: 0;
+
+  @include breakpoint($large) {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+
 .author__urls-wrapper {
   position: relative;
   display: table-cell;
@@ -270,19 +280,3 @@
   }
 }
 
-.author__news {
-  margin-top: 2em;
-  
-  h3 {
-    margin-bottom: 0.5em;
-  }
-  
-  ul {
-    padding-left: 1em;
-    margin: 0;
-  }
-  
-  li {
-    margin-bottom: 0.5em;
-  }
-}
