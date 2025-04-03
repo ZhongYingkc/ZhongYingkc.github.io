@@ -13,4 +13,4 @@ main:
     url: "/#-honors-and-awards"
 
   - title: "CV"
-    url: "\images\resume.pdf"
+    url: "/images/resume.pdf"
