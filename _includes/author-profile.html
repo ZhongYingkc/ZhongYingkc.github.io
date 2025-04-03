@@ -218,10 +218,8 @@
   </div>
   <div class="author__news">
     <h3>🔥 News and Activities</h3>
-    <ul>
-      {% for item in author.news %}
-        <li><em>{{ item.date }}</em><br>{{ item.content }}</li>
-      {% endfor %}
-    </ul>
+    {% for item in author.news %}
+      <p><em>{{ item.date }}</em>: {{ item.content }}</p>
+    {% endfor %}
   </div>
 </div>
