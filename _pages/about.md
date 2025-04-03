@@ -27,7 +27,7 @@ My research interets include Human-Computer Interaction and eXtended Reality. I 
 - *2022.09 - 2025.07 (Expected)*, MA, Beijing Film Academy, Beijing. 
 - *2018.09 - 2022.06*, BEng, Beijing Film Academy, Beijing.
 
-# 💡 Projects 
+# 💡 Publications 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICME 2024</div><img src='images/handCS.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
