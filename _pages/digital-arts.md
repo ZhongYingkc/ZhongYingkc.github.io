@@ -1,5 +1,4 @@
 ---
-layout: default
 permalink: /digital-arts/
 title: "digital arts"
 excerpt: ""
