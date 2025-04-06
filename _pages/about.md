@@ -44,6 +44,3 @@ My research interets include Human-Computer Interaction and eXtended Reality. I 
 
 # 🎖 Honors and Awards
 - *2024.12* National Scholarship (Top 3%)
-
-# 🎥 Digital Arts
-Check out my [Digital Arts projects](/digital-arts/)
