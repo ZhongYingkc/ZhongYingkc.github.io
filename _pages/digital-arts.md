@@ -1,10 +1,11 @@
 ---
+layout: default
 permalink: /digital-arts/
 title: "digital arts"
 excerpt: ""
 author_profile: true
 redirect_from: 
-  - /digital-arts/
+  - /digital-arts
   - /digital-arts.html
 ---
 
