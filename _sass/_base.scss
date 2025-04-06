@@ -338,6 +338,10 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
   border: 1px solid rgba(1, 47, 99, 0.08);
   margin-bottom: calc(var(--spacing-unit) * 0.6);  // 减小下方间距
 
+  &:hover {
+    box-shadow: var(--hover-shadow);
+  }
+
   h3 {
     margin-top: 0;
     margin-bottom: calc(var(--spacing-unit) * 0.5);  // 减小标题下方间距
