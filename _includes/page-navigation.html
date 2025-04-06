@@ -12,19 +12,19 @@
                 if(url.includes('/digital-arts/')){
                     e.preventDefault();
                     fetch(url)
-                     .then(response => response.text())
-                     .then(html => {
-                         const parser = new DOMParser();
-                         const doc = parser.parseFromString(html, 'text/html');
-                         const newContent = doc.querySelector('page__content');
+                        .then(response => response.text())
+                        .then(html => {
+                            const parser = new DOMParser();
+                            const doc = parser.parseFromString(html, 'text/html');
+                            const newContent = doc.querySelector('page__content');
                          
-                         if(newContent){
-                             const currentContent = document.querySelector('page__content');
-                             currentContent.innerHTML = newContent.innerHTML;
+                            if(newContent){
+                                const currentContent = document.querySelector('page__content');
+                                currentContent.innerHTML = newContent.innerHTML;
                              
-                             history.pushState(null, '', url);
-                         }
-                     });
+                                history.pushState(null, '', url);
+                            }
+                        });
                     return;
                 }
                 
