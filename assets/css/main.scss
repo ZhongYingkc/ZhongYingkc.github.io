@@ -72,6 +72,17 @@
     .paper-box-text{
         max-width: 100%;
         order: 1;
+        text-align: justify;
+        hyphens: auto;
+        word-wrap: break-word;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+
+        h4{
+            text-align: left;
+        }
+        
     }
     
     @include breakpoint($medium) {
