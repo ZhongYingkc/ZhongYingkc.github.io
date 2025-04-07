@@ -47,9 +47,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     // border-bottom: 1px #efefef solid;
-    padding: 1em 1em 1em 1em;
+    padding: var(--spacing-unit) calc(var(--spacing-unit) * 1.2);
     border-radius: var(--border-radius);
-    margin: 0.6em 0;
+    margin: calc(var(--spacing-unit) * 0.8) 0;
 
     &:hover {
         box-shadow: var(--hover-shadow);
@@ -60,7 +60,7 @@
         display: flex;
         width: 100%;
         order: 2;
-        margin: 0 0.2 em
+        margin: 0 calc(var(--spacing-unit) * 1.2);
         img {
             max-width: 350px;
             // box-shadow: 3px 3px 6px #888;
