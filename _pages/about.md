@@ -45,8 +45,6 @@ I am a 3rd year Master student in China Film High Tech Research Institute at Bei
 - *2022.09 - 2025.07 (Expected)*, MA, Beijing Film Academy, Beijing. 
 - *2018.09 - 2022.06*, BEng, Beijing Film Academy, Beijing.
 
-# 🎖 Honors and Awards
-- *2024.12* National Scholarship (Top 3%)
 
 # 💡 Publications 
 <!--<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICME 2024</div><img src='images/handCS.png' alt="sym" width="100%"></div></div>-->
@@ -99,3 +97,9 @@ Feilin Han, **Ying Zhong** and Minxi Zhou
 - [[paper]](https://doi.org/10.1109/ICME52920.2022.9859864) 
 </div>
 </div>
+
+
+# 🎖 Honors and Services
+- *2024.12* National Scholarship (Top 3%)
+- *2022.01 - 2022.03* Photography Volunteer, Beijing Olympic and Paralympic Winter Games
+- *2019.05 - 2020.12* Technical Volunteer, International Student Film and Video Festival (ISFVF)

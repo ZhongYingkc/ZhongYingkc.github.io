@@ -5,12 +5,12 @@ main:
     
   - title: "Publications"
     url: "/#-publications"
-
+    
+  - title: "Honors and Services"
+    url: "/#-honors-and-services"
+    
   - title: "Digital Arts"
     url: "/digital-arts/"
-    
-  - title: "Honors and Awards"
-    url: "/#-honors-and-awards"
 
   - title: "CV"
     url: "/images/resume.pdf"
