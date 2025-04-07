@@ -19,7 +19,25 @@ redirect_from:
 # Hi, it's Wing <img src="/images/wing.svg" alt="Wing Logo" width="3%">
 I am a 3rd year Master student in China Film High Tech Research Institute at Beijing Film Academy. Prior to my Master’s program, I received my BEng in Digtial Media Technology from Beijing Film Academy. I am currently working with [Dr. Feilin Han](http://feilinh.cn) in Virtual Reality Lab . 
 
-<div class="highlight-blocks"><div class="highlight-block"><h3>💻 HCI Researcher</h3><ul><li>VR, AR and XR</li><li>User perception</li><li>Interaction Design</li></ul></div><div class="highlight-block"><h3>🧩 *Former* Digital Media Artist</h3><ul><li>Immersive Content</li><li>Virtual Production</li><li>Photography</li></ul></div></div>
+<div class="highlight-blocks">
+<div class="highlight-block">
+    <h3>💻 HCI Researcher</h3>
+    <ul>
+      <li>VR, AR and XR</li>
+      <li>User perception</li>
+      <li>Interaction Design</li>
+    </ul>
+  </div>
+  
+  <div class="highlight-block">
+    <h3>🧩 *Former* Digital Media Artist</h3>
+    <ul>
+      <li>Immersive Content</li>
+      <li>Virtual Production</li>
+      <li>Photography</li>
+    </ul>
+  </div>
+</div>
 
 <!--My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).-->
 

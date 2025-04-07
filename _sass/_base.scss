@@ -7,6 +7,16 @@ html {
   min-height: 100%;
 }
 
+/* Global Style Variables */
+:root {
+  --gradient-bg: linear-gradient(145deg, #ffffff, #f8f9fa);
+  --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  --hover-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  --border-radius: 10px;  // 稍微减小圆角
+  // --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --spacing-unit: 1.4rem;  // 减小基础间距单位
+}
+
 body {
   margin: 0;
   padding: 0;
