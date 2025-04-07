@@ -46,7 +46,7 @@ I am a 3rd year Master student in China Film High Tech Research Institute at Bei
 - *2018.09 - 2022.06*, BEng, Beijing Film Academy, Beijing.
 
 # 💡 Publications 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICME 2024</div><a href="https://ieeexplore.ieee.org/abstract/document/10687394"><img src='images/handCS.png' alt="sym" width="100%"></a></div</div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICME 2024</div><img src='images/handCS.png' alt="sym" width="100%"></div</div>
 <div class='paper-box-text' markdown="1">
 
 **The Correlation Analysis Between Cybersickness and Postural Behavior in Immersive VR Experience**
