@@ -16,8 +16,10 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
-# Hi, it's Wing <img src="/images/wing.svg" alt="Wing Logo" width="3%">
-I am a 3rd year Master student in China Film High Tech Research Institute at Beijing Film Academy. Prior to my Master’s program, I received my BEng in Digtial Media Technology from Beijing Film Academy. I am currently working with [Dr. Feilin Han](http://feilinh.cn) in Virtual Reality Lab . 
+# Hi <img src="/images/wing.svg" alt="Wing Logo" width="3%">
+I'm Ying Zhong, but just call me Wing—that’s how it’s pronounced in Cantonese. I'm a third-year Master’s student at the China Film High Tech Research Institute, Beijing Film Academy, where I also completed my BEng in Digital Media Technology. 
+
+Currently, I’m working with [Dr. Feilin Han](http://feilinh.cn) in Virtual Reality Lab exploring  the creative possibilities of VR.
 
 <div class="highlight-blocks">
 <div class="highlight-block">
@@ -41,9 +43,9 @@ I am a 3rd year Master student in China Film High Tech Research Institute at Bei
 
 <!--My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).-->
 
-# 📖 Educations
-- *2022.09 - 2025.07 (Expected)*, MA, Beijing Film Academy, Beijing. 
-- *2018.09 - 2022.06*, BEng, Beijing Film Academy, Beijing.
+# 🎓 Educations
+- *2022/09 - 2025/07 (Expected)*, MA, Beijing Film Academy, Beijing. 
+- *2018/09 - 2022/06*, BEng, Beijing Film Academy, Beijing.
 
 
 # 💡 Publications 
@@ -100,6 +102,6 @@ Feilin Han, **Ying Zhong** and Minxi Zhou
 
 
 # 🎖 Honors and Services
-- *2024.12* National Scholarship (Top 3%)
-- *2022.01 - 2022.03* Photography Volunteer, *Beijing Olympic and Paralympic Winter Games*
-- *2019.05 - 2020.12* Technical Volunteer, *International Student Film and Video Festival (ISFVF)*
+- *2024/12* National Scholarship (Top 3%)
+- *2022/01 - 2022/03* Photography Volunteer, *Beijing Olympic and Paralympic Winter Games*
+- *2019/05 - 2020/12* Technical Volunteer, *International Student Film and Video Festival (ISFVF)*
