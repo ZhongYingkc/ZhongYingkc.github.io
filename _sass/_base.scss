@@ -349,6 +349,7 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
 
   &:hover {
     box-shadow: var(--hover-shadow);
+    border: 1px solid #5bb5db;
   }
 
   h3 {
