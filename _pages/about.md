@@ -19,54 +19,8 @@ redirect_from:
 # Hi, it's Wing <img src="/images/wing.svg" alt="Wing Logo" width="3%">
 I am a 3rd year Master student in China Film High Tech Research Institute at Beijing Film Academy. Prior to my Master’s program, I received my BEng in Digtial Media Technology from Beijing Film Academy. I am currently working with [Dr. Feilin Han](http://feilinh.cn) in Virtual Reality Lab . 
 
-<!--<div class="highlight-blocks">-->
-<!--  <div class="highlight-block">-->
-<!--    <h3>💻 HCI Researcher</h3>-->
-<!--    <ul>-->
-<!--      <li>VR, AR and XR</li>-->
-<!--      <li>User perception</li>-->
-<!--      <li>Interaction Design</li>-->
-<!--    </ul>-->
-<!--  </div>-->
-<!--  -->
-<!--  <div class="highlight-block">-->
-<!--    <h3>🧩 *Former* Digital Media Artist</h3>-->
-<!--    <ul>-->
-<!--      <li>Immersive Content</li>-->
-<!--      <li>Virtual Production</li>-->
-<!--      <li>Photography</li>-->
-<!--    </ul>-->
-<!--  </div>-->
-<!--</div>-->
+<div class="highlight-blocks"><div class="highlight-block"><h3>💻 HCI Researcher</h3><ul><li>VR, AR and XR</li><li>User perception</li><li>Interaction Design</li></ul></div><div class="highlight-block"><h3>🧩 *Former* Digital Media Artist</h3><ul><li>Immersive Content</li><li>Virtual Production</li><li>Photography</li></ul></div></div>
 
-<div class="highlight-blocks">
-  <div class="highlight-block">
-    <h3>🔬 AI Researcher</h3>
-    <ul>
-      <li>Research focus on LLMs and NLP</li>
-      <li>Multiple internships at top institutions</li>
-      <li>Publication at AAAI 2025</li>
-    </ul>
-  </div>
-  
-  <div class="highlight-block">
-    <h3>✍️ Content Creator</h3>
-    <ul>
-      <li>Technical blogs with 500K+ views</li>
-      <li>Active on <a href="https://www.xiaohongshu.com/user/profile/60c47bae000000000100b07e">Xiaohongshu</a></li>
-      <li>Growing <a href="https://mp.weixin.qq.com/s/5wn3NvB2FBpJD1jK0L4qbQ">WeChat Public Account</a> on Tech & Humanities</li>
-    </ul>
-  </div>
-  
-  <div class="highlight-block">
-    <h3>🌎 Life Explorer</h3>
-    <ul>
-      <li>Visited 7 countries worldwide</li>
-      <li>Traveled to 32 provinces in China</li>
-      <li>Rich experience in social work & activities</li>
-    </ul>
-  </div>
-</div>
 <!--My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).-->
 
 # 📖 Educations
