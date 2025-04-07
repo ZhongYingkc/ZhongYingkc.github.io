@@ -101,5 +101,5 @@ Feilin Han, **Ying Zhong** and Minxi Zhou
 
 # 🎖 Honors and Services
 - *2024.12* National Scholarship (Top 3%)
-- *2022.01 - 2022.03* Photography Volunteer, Beijing Olympic and Paralympic Winter Games
-- *2019.05 - 2020.12* Technical Volunteer, International Student Film and Video Festival (ISFVF)
+- *2022.01 - 2022.03* Photography Volunteer, *Beijing Olympic and Paralympic Winter Games*
+- *2019.05 - 2020.12* Technical Volunteer, *International Student Film and Video Festival (ISFVF)*
