@@ -49,17 +49,6 @@ Currently, I’m working with [Dr. Feilin Han](http://feilinh.cn) in Virtual Rea
 
 
 # 💡 Publications 
-<!--<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICME 2024</div><img src='images/handCS.png' alt="sym" width="100%"></div></div>-->
-<!--<div class='paper-box-text' markdown="1">-->
-<!---->
-<!--<h4>The Correlation Analysis Between Cybersickness and Postural Behavior in Immersive VR Experience</h4>-->
-<!---->
-<!--**Ying Zhong**, Ke-Ao Zhao, Leping Zhang, Fangming Zhao, Wentao Wei and Feilin Han-->
-<!--- This work investigates the relationship between cybersickness and hand posture behavior.-->
-<!--- [[paper]](https://ieeexplore.ieee.org/abstract/document/10687394) -->
-<!---->
-<!--</div>-->
-<!--</div>-->
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICME 2024</div><img src='images/handCS.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -83,7 +72,7 @@ Feilin Han, **Ying Zhong** and Ke-Ao Zhao
 
 <!--[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>-->
 - This work investigates viewing behavior, summarize attention distribution regulations and derive practical insights into the aspects of learning decision-making for panorama production.
-- [[link]](https://doi.org/10.1145/3606041.3618060) 
+- [[link]](https://doi.org/10.1145/3606041.3618060) [[PDF]](/images/hcma23.pdf)
 </div>
 </div>
 
