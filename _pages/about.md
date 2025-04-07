@@ -45,6 +45,9 @@ I am a 3rd year Master student in China Film High Tech Research Institute at Bei
 - *2022.09 - 2025.07 (Expected)*, MA, Beijing Film Academy, Beijing. 
 - *2018.09 - 2022.06*, BEng, Beijing Film Academy, Beijing.
 
+# 🎖 Honors and Awards
+- *2024.12* National Scholarship (Top 3%)
+
 # 💡 Publications 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICME 2024</div><img src='images/handCS.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -60,5 +63,4 @@ I am a 3rd year Master student in China Film High Tech Research Institute at Bei
 
 
 
-# 🎖 Honors and Awards
-- *2024.12* National Scholarship (Top 3%)
+
