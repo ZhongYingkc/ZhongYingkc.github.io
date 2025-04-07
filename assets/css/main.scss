@@ -47,9 +47,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     // border-bottom: 1px #efefef solid;
-    padding: 2em 0 2em 0;
+    padding: 2em 1.68em 2em 1.68em;
     border-radius: var(--border-radius);
-    margin: calc(var(--spacing-unit) * 0.8) 0;
+    margin: 0.84em 0;
 
     &:hover {
         box-shadow: var(--hover-shadow);
@@ -61,6 +61,7 @@
         display: flex;
         width: 100%;
         order: 2;
+        margin: 0 0.84em;
         img {
             max-width: 400px;
             // box-shadow: 3px 3px 6px #888;
@@ -72,6 +73,7 @@
     .paper-box-text{
         max-width: 100%;
         order: 1;
+        margin: 0 0.84em;
     }
     
     @include breakpoint($medium) {
