@@ -46,13 +46,14 @@
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    border-bottom: 1px #efefef solid;
+    // border-bottom: 1px #efefef solid;
     padding: 2em 0 2em 0;
     border-radius: var(--border-radius);
     margin: calc(var(--spacing-unit) * 0.8) 0;
 
     &:hover {
         box-shadow: var(--hover-shadow);
+        border: 1px solid rgba(1, 47, 99, 0.08);
       }
     
     .paper-box-image{
