@@ -48,6 +48,7 @@ I am a 3rd year Master student in China Film High Tech Research Institute at Bei
 # 💡 Publications 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICME 2024</div><a href="https://ieeexplore.ieee.org/abstract/document/10687394"><img src='images/handCS.png' alt="sym" width="100%"></a></div</div>
 <div class='paper-box-text' markdown="1">
+
 <h4>The Correlation Analysis Between Cybersickness and Postural Behavior in Immersive VR Experience</h4>
 **Ying Zhong**, Ke-Ao Zhao, Leping Zhang, Fangming Zhao, Wentao Wei and Feilin Han
 - This work investigates the relationship between cybersickness and hand posture behavior.
@@ -57,6 +58,7 @@ I am a 3rd year Master student in China Film High Tech Research Institute at Bei
 </div>
 
 <!--- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**-->
+
 
 # 🎖 Honors and Awards
 - *2024.12* National Scholarship (Top 3%)
