@@ -30,7 +30,7 @@ I am a 3rd year Master student in China Film High Tech Research Institute at Bei
   </div>
   
   <div class="highlight-block">
-    <h3>🧩 *Former* Digital Media Artist</h3>
+    <h3>🧩 <em>Former</em> Digital Media Artist</h3>
     <ul>
       <li>Immersive Content</li>
       <li>Virtual Production</li>
