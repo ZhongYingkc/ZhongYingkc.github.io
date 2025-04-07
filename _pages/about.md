@@ -26,7 +26,7 @@ Currently, I’m working with [Dr. Feilin Han](http://feilinh.cn) in Virtual Rea
     <h3>💻 HCI Researcher</h3>
     <ul>
       <li>VR, AR and XR</li>
-      <li>User perception</li>
+      <li>User Perception</li>
       <li>Interaction Design</li>
     </ul>
   </div>
