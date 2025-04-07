@@ -95,7 +95,7 @@ Feilin Han, **Ying Zhong** and Ke-Ao Zhao
 Feilin Han, **Ying Zhong** and Minxi Zhou
 
 <!--[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>-->
-- This work investigates the relationship between viewing experience and various factors in Cinematic VR, and proposes an attention–comfort–understanding analysis paradigm to help creators better capture viewers' attention, reduce cybersickness, and enhance narrative comprehension.
+- This work investigates the relationship between viewing experience and various factors in Cinematic VR, and proposes an attention–comfort–understanding analysis paradigm to help creators better capture viewers' attention and enhance narrative comprehension.
 - [[paper]](https://doi.org/10.1109/ICME52920.2022.9859864) 
 </div>
 </div>
