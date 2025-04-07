@@ -16,10 +16,10 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
-# Hi <img src="/images/wing.svg" alt="Wing Logo" width="3%">
+# Hi! <img src="/images/wing.svg" alt="Wing Logo" width="4%">
 I'm Ying Zhong, but just call me Wing—that’s how it’s pronounced in Cantonese. I'm a third-year Master’s student at the China Film High Tech Research Institute, Beijing Film Academy, where I also completed my BEng in Digital Media Technology. 
 
-Currently, I’m working with [Dr. Feilin Han](http://feilinh.cn) in Virtual Reality Lab exploring  the creative possibilities of VR.
+Currently, I’m working with [Dr. Feilin Han](http://feilinh.cn) in Virtual Reality Lab, exploring  the creative possibilities of VR.
 
 <div class="highlight-blocks">
 <div class="highlight-block">
