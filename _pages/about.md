@@ -113,8 +113,21 @@ Feilin Han, **Ying Zhong** and Minxi Zhou
 
 
 # 📸 Digital Arts
-<div class='portfolio-box'><div class='portfolio-box-image'><div><div class="badge">Dome 2020</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='portfolio-box'><div class='portfolio-box-image'><div><div class="badge">Dome</div><a href="https://www.bilibili.com/video/BV1zj421d72z/"><img src='images/bfahemisphere.jpeg' alt="sym" width="100%"></a></div></div>
 </div>
+
+<div class='portfolio-box'><div class='portfolio-box-image'><div><div class="badge">Dome</div><img src='images/thebelief.jpeg' alt="sym" width="100%"></div></div>
+</div>
+
+<div class='portfolio-box'><div class='portfolio-box-image'><div><div class="badge">Mapping</div><img src='images/globe.jpeg' alt="sym" width="100%"></div></div>
+</div>
+
+<div class='portfolio-box'><div class='portfolio-box-image'><div><div class="badge">CGI Animation</div><img src='images/beginning.jpeg' alt="sym" width="100%"></div></div>
+</div>
+
+<div class='portfolio-box'><div class='portfolio-box-image'><div><div class="badge">Timelapse Photography</div><img src='images/metropolitan.jpeg' alt="sym" width="100%"></div></div>
+</div>
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Dome 2021</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
