@@ -27,7 +27,7 @@ Currently, I’m working with [Dr. Feilin Han](http://feilinh.cn) in Virtual Rea
 
 <div class="notification-box">
 <div class='notification-box-text' markdown="1">
-I am seeking collaboration opportunities. If you are interested in my research or would like to collaborate, please feel free to <a href="{{author.email}}">reach out</a>.
+📢 I am seeking collaboration opportunities. If you are interested in my research or would like to collaborate, please feel free to <a href="{{author.email}}">reach out</a>.
 </div>
 </div>
 
@@ -57,7 +57,7 @@ I am seeking collaboration opportunities. If you are interested in my research o
 - *2022/09 - 2025/07 (Expected)*, MA, Beijing Film Academy, Beijing. 
 - *2018/09 - 2022/06*, BEng, Beijing Film Academy, Beijing.
 
-# 🎖 Honors and Services
+# 🏅 Awards and Services
 - *2024/12* National Scholarship (Top 3%)
 - *2022/01 - 2022/03* Photography Volunteer, *Beijing Olympic and Paralympic Winter Games*
 - *2019/05 - 2020/12* Technical Volunteer, *International Student Film and Video Festival (ISFVF)*
@@ -106,7 +106,7 @@ Feilin Han, **Ying Zhong** and Minxi Zhou
 </div>
 
 
-# 🎥 Digital Arts
+# 📸 Digital Arts
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Dome 2020</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
