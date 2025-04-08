@@ -2,7 +2,7 @@
 permalink: /digital-arts/
 title: "digital arts"
 author_profile: true
-layout: default
+layout: archive
 ---
 
 {% if site.google_scholar_stats_use_cdn %}
