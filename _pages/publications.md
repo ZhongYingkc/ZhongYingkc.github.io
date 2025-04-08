@@ -1,9 +1,10 @@
 ---
 permalink: /publications/
-title: "Publications"
+title: Publications
 excerpt: ""
 author_profile: true
 layout: default
+classes: wide
 ---
 
 {% if site.google_scholar_stats_use_cdn %}
@@ -12,6 +13,8 @@ layout: default
 {% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
 {% endif %}
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
+
+{% include base_path %}
 
 
 # 💡 Publications 

@@ -1,6 +1,6 @@
 ---
 permalink: /digital-arts/
-title: "digital arts"
+title: digital arts
 author_profile: true
 layout: default
 ---
