@@ -107,6 +107,48 @@
 
 }
 
+.notification-box {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // border-bottom: 1px #efefef solid;
+    padding: 1em 1em 1em 1em;
+    border-radius: var(--border-radius);
+    margin: 0.8em 0;
+    background-color: #c8c8c8;
+    
+    .notification-box-text{
+        max-width: 100%;
+        order: 1;
+        text-align: justify;
+        hyphens: auto;
+        word-wrap: break-word;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+
+        h4{
+            text-align: left;
+        }
+        
+    }
+    
+    @include breakpoint($medium) {
+        .notification-box-text{
+            justify-content: left;
+            padding-left: 1em;
+            padding-right: 1em;
+            max-width: 60%;
+            order: 2;
+        }
+
+    }
+
+
+}
+
 $scroll_offset : 2em;
 h1:before, .anchor:before { 
     content: ''; 
