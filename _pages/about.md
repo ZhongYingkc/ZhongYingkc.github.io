@@ -54,6 +54,9 @@ Currently, I’m working with [Dr. Feilin Han](http://feilinh.cn) in Virtual Rea
 
 
 # 💡 Publications 
+{% if author.googlescholar %}
+  You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
+{% endif %}
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICME 2024</div><img src='images/handCS.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -91,5 +94,59 @@ Feilin Han, **Ying Zhong** and Minxi Zhou
 <!--[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>-->
 - This work investigates the relationship between viewing experience and various factors in Cinematic VR, and proposes an attention–comfort–understanding analysis paradigm to help creators better capture viewers' attention and enhance narrative comprehension.
 - [[link]](https://doi.org/10.1109/ICME52920.2022.9859864) [[PDF]](/images/icme22.pdf)
+</div>
+</div>
+
+
+# 🎥 Digital Arts
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Dome 2020</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**the belief**
+
+[**Video Presentation**](https://www.bilibili.com/video/BV1zj421d72z/) 
+- Immersive Video &#124; Dome &#124; CGI Animation &#124; Notch &#124; Hecos
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Dome 2021</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+***BFA* in the Hemsiphere**
+
+[**Video Presentation**](https://www.bilibili.com/video/BV1zj421d72z/) 
+- Immersive Video &#124; Dome &#124; Timelapse Photography &#124; Color Grading &#124; Hecos
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Mapping 2020</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**the globe can be a tower**
+
+[**Video Presentation**](https://www.bilibili.com/video/BV1zj421d72z/) 
+- Mapping &#124; CGI Animation &#124; C4D &#124; Hecos
+- Inspired by the song of *Wutiaoren*.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CGI Animation 2023</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**the beginning**
+
+[**Video Presentation**](https://www.bilibili.com/video/BV1Q2421P7oK/) 
+- CGI Animation &#124; Unreal Engine &#124; Virtual Environment Lighting &#124; Shader
+- Inspired by *Rurouni Kenshin: The Beginning*.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Timelapse Photography 2019</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**Metropolitan**
+
+[**Video Presentation**](https://www.bilibili.com/video/BV1cm411C71Q/) 
+- Timelapse Photography &#124; Color Grading &#124; Editing
 </div>
 </div>
