@@ -14,7 +14,7 @@
                 {% else %}
                 {% assign domain = base_path %}
               {% endif %}
-              <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+              <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}" target="_self">{{ link.title }}</a></li>
             {% endfor %}
         </ul>
         <button class="greedy-nav__toggle"><div class="navicon"></div></button>
