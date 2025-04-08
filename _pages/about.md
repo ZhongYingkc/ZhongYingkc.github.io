@@ -54,16 +54,16 @@ Currently, I’m working with [Dr. Feilin Han](http://feilinh.cn) in Virtual Rea
 <!--My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).-->
 
 # 🔥 News and Activities
-- *2025.04* 🥳 Attending CHI25 in Yokohama
-- *2024.03* 🎉 New paper is accepted by ICME 2024
+- *2025/04*: 🥳 Attending CHI25 in Yokohama
+- *2024/03*: 🎉 New paper is accepted by ICME 2024
 
 # 🎓 Educations
 - *2022/09 - 2025/07 (Expected)*, MA, Beijing Film Academy, Beijing. 
 - *2018/09 - 2022/06*, BEng, Beijing Film Academy, Beijing.
 
 # 🏅 Awards and Services
-- *2024/12* National Scholarship (Top 3%)
-- *2022/01 - 2022/03* Photography Volunteer, *Beijing Olympic and Paralympic Winter Games*
-- *2019/05 - 2020/12* Technical Volunteer, *International Student Film and Video Festival (ISFVF)*
+- *2024/12*, National Scholarship (Top 3%)
+- *2022/01 - 2022/03*, Photography Volunteer, *Beijing Olympic and Paralympic Winter Games*
+- *2019/05 - 2020/12*, Technical Volunteer, *International Student Film and Video Festival (ISFVF)*
 
 
