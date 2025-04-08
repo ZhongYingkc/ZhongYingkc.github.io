@@ -22,11 +22,8 @@ classes: wide
 
 
 # 💡 Selected Publications 
-<div class="notification-box">
-<div class='notification-box-text' markdown="1">
+
 You can find all my articles on my <a href="{{author.googlescholar}}">Google Scholar profile</a>.
-</div>
-</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICME 2024</div><img src='/images/handCS.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
