@@ -113,14 +113,7 @@ Feilin Han, **Ying Zhong** and Minxi Zhou
 
 
 # 📸 Digital Arts
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Dome 2020</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**the belief**
-
-[**Video Presentation**](https://www.bilibili.com/video/BV1zj421d72z/) 
-- Immersive Video &#124; Dome &#124; CGI Animation &#124; Notch &#124; Hecos
-</div>
+<div class='portfolio-box'><div class='portfolio-box-image'><div><div class="badge">Dome 2020</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 </div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Dome 2021</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
