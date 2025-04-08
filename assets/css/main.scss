@@ -135,16 +135,16 @@
         
     }
     
-    @include breakpoint($medium) {
-        .notification-box-text{
-            justify-content: left;
-            padding-left: 1em;
-            padding-right: 1em;
-            max-width: 60%;
-            order: 2;
-        }
+    // @include breakpoint($medium) {
+    //     .notification-box-text{
+    //         justify-content: left;
+    //         padding-left: 1em;
+    //         padding-right: 1em;
+    //         max-width: 60%;
+    //         order: 2;
+    //     }
 
-    }
+    // }
 
 
 }
