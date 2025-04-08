@@ -13,7 +13,7 @@ layout: default
 
 **the belief**
 
-[**Video Presentation**](https://www.bilibili.com/video/BV1zj421d72z/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Video Presentation**](https://www.bilibili.com/video/BV1zj421d72z/) 
 - Immersive Video &#124; Dome &#124; CGI Animation &#124; Notch &#124; Hecos
 </div>
 </div>
@@ -23,7 +23,7 @@ layout: default
 
 ***BFA* in the Hemsiphere**
 
-[**Video Presentation**](https://www.bilibili.com/video/BV1zj421d72z/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Video Presentation**](https://www.bilibili.com/video/BV1zj421d72z/) 
 - Immersive Video &#124; Dome &#124; Timelapse Photography &#124; Color Grading &#124; Hecos
 </div>
 </div>
@@ -33,7 +33,7 @@ layout: default
 
 **the globe can be a tower**
 
-[**Video Presentation**](https://www.bilibili.com/video/BV1zj421d72z/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> 
+[**Video Presentation**](https://www.bilibili.com/video/BV1zj421d72z/) 
 - Mapping &#124; CGI Animation &#124; C4D &#124; Hecos
 - Inspired by the song of *Wutiaoren*.
 </div>
@@ -44,7 +44,7 @@ layout: default
 
 **the beginning**
 
-[**Video Presentation**](https://www.bilibili.com/video/BV1Q2421P7oK/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> 
+[**Video Presentation**](https://www.bilibili.com/video/BV1Q2421P7oK/) 
 - CGI Animation &#124; Unreal Engine &#124; Virtual Environment Lighting &#124; Shader
 - Inspired by *Rurouni Kenshin: The Beginning*.
 </div>
@@ -55,7 +55,7 @@ layout: default
 
 **Metropolitan**
 
-[**Video Presentation**](https://www.bilibili.com/video/BV1cm411C71Q/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> 
+[**Video Presentation**](https://www.bilibili.com/video/BV1cm411C71Q/) 
 - Timelapse Photography &#124; Color Grading &#124; Editing
 </div>
 </div>
