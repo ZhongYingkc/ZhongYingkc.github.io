@@ -23,7 +23,7 @@ google_scholar_stats_use_cdn : true
 author:
   name             : "Ying (Wing) Zhong"
   chinesename      : "钟颖"
-  avatar           : "images/avatar.png"
+  avatar           : "/images/avatar.png"
   bio              : "Incoming PhD student at Indiana University Indianapolis"
   location         : "Beijing, China"
 #  employer         :
