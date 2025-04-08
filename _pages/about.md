@@ -27,7 +27,7 @@ Currently, I’m working with [Dr. Feilin Han](http://feilinh.cn) in Virtual Rea
 
 <div class="notification-box">
 <div class='notification-box-text' markdown="1">
-📢 I am seeking collaboration opportunities. If you are interested in my research or would like to collaborate, please feel free to <a href="{{author.email}}">reach out</a>.
+📢 I am seeking collaboration opportunities. If you are interested in my research or would like to collaborate, please feel free to <a href="mailto:{{ author.email }}">reach out</a>.
 </div>
 </div>
 
