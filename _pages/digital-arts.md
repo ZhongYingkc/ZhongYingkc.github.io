@@ -7,6 +7,7 @@ layout: default
 
 {% include base_path %}
 
+# 📸 Digital Arts
 
 <div class='portfolio-box'><div class='portfolio-box-image'><div><div class="badge">Dome</div><img src='/images/bfahemisphere.png' alt="sym" width="100%"></div></div>
 </div>
