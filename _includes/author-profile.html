@@ -222,10 +222,12 @@
       {% endif %}
     </div>
   </div>
+  {% if author.news %}
   <div class="author__news">
     <h3>🔥 News and Activities</h3>
     {% for item in author.news %}
       <p><em>{{ item.date }}</em>: {{ item.content }}</p>
     {% endfor %}
   </div>
+  {% endif %}
 </div>
