@@ -2,7 +2,7 @@
 permalink: /digital-arts/
 title: "digital arts"
 author_profile: true
-
+layout: default
 ---
 
 {% if site.google_scholar_stats_use_cdn %}
@@ -12,6 +12,7 @@ author_profile: true
 {% endif %}
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
+{% include base_path %}
 
 # 🎥 Digital Arts
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Dome 2020</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
