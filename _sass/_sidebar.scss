@@ -83,6 +83,7 @@
   display: table-cell;
   vertical-align: top;
   width: 75px;
+  border: 1px solid rgba(91, 181, 219, 0.5);
   // set width only, for non-square avatars
   // height: 36px;
 
@@ -104,7 +105,6 @@
 
     &:hover {
       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-      border: 1px solid rgba(91, 181, 219, 0.5);
     }
   }
 }
