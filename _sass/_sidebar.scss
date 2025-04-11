@@ -138,6 +138,7 @@
 .author__chinesename {
   margin: 0;
   font-family: $Chinese;
+  font-size: $type-size-3;
 
   @include breakpoint($large) {
     margin-top: 10px;
