@@ -139,6 +139,7 @@
   margin: 0;
   font-family: $Chinese;
   font-size: $type-size-3;
+  font-weight: normal;
 
   @include breakpoint($large) {
     margin-top: 10px;
@@ -160,6 +161,7 @@
   }
   font-family: $Chinese;
   font-size: $type-size-4;
+  font-weight: normal;
 }
 
 .author__bio {
