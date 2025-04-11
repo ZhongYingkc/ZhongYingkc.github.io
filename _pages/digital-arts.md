@@ -7,7 +7,7 @@ layout: default
 
 {% include base_path %}
 
-# Digital Arts
+# DIGITAL MEDIA WORKS
 
 Click the images to see their video presentation.
 

@@ -21,7 +21,7 @@ classes: wide
 {% endif %}
 
 
-# Selected Publications 
+# SELECTED PUBLICATIONS 
 
 You can find all my articles on my <a href="{{author.googlescholar}}">Google Scholar profile</a>.
 
