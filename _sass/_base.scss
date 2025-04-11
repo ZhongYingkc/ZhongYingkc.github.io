@@ -357,7 +357,7 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
     margin-bottom: calc(var(--spacing-unit) * 0.5);  // 减小标题下方间距
     color: $text-color;
     font-size: 1.3em;
-    font-weight: normal;
+    font-weight: 300;
   }
 
   ul {
