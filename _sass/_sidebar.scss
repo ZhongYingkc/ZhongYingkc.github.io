@@ -135,11 +135,29 @@
   }
 }
 
+.author__chinesename {
+  margin: 0;
+  font-family: $Chinese;
+
+  @include breakpoint($large) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
 .sidebar .author__name {
   @include breakpoint($medium) {
     font-size: $type-size-3;
   }
   font-family: $header-font-family;
+  font-size: $type-size-4;
+}
+
+.sidebar .author__chinesename {
+  @include breakpoint($medium) {
+    font-size: $type-size-3;
+  }
+  font-family: $Chinese;
   font-size: $type-size-4;
 }
 
