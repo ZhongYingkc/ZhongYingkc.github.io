@@ -7,7 +7,7 @@ layout: default
 
 {% include base_path %}
 
-# 📸 Digital Arts
+# Digital Arts
 
 Click the images to see their video presentation.
 
