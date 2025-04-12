@@ -41,7 +41,7 @@ You can find all my articles on my <a href="{{author.googlescholar}}">Google Sch
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">HCMA 2023</div><img src='/images/viewbehavior.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-<h4>An Analytical Study of Visual Attention Behavior in Viewing Panoramic Video</h4>
+<h3>An Analytical Study of Visual Attention Behavior in Viewing Panoramic Video</h3>
 
 Feilin Han, *Ying Zhong* and Ke-Ao Zhao
 
@@ -54,7 +54,7 @@ Feilin Han, *Ying Zhong* and Ke-Ao Zhao
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICME 2022</div><img src='/images/cvr.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-<h4>Evaluating the Effect of Cinematography on the Viewing Experience in Immersive Environment</h4>
+<h3>Evaluating the Effect of Cinematography on the Viewing Experience in Immersive Environment</h3>
 
 Feilin Han, *Ying Zhong* and Minxi Zhou
 
