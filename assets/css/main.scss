@@ -53,7 +53,7 @@
 
     &:hover {
         box-shadow: var(--hover-shadow);
-        border: 1px solid rgba(91, 181, 219, 0.5);
+        border: 1px solid rgba(215, 216, 216, 0.5);
       }
     
     .paper-box-image{
@@ -149,7 +149,7 @@
     padding: 1em 1em 1em 1em;
     border-radius: var(--border-radius);
     margin: 0.8em 0;
-    background-color: #5bb5db22;
+    background-color: rgba(215, 216, 216, 0.163);
     
     .notification-box-text{
         max-width: 100%;
@@ -186,7 +186,7 @@ h1:before, .anchor:before {
     margin-top: .5em;
     margin-left: -.5em;
     color: white;
-    background-color: #5bb5db;
+    background-color: rgba(215, 216, 216, 0.5);
     font-size: .8em;
     font-weight: 500;
     font-family: $global-font-family;
