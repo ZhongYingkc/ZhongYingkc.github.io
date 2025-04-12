@@ -2,7 +2,7 @@
 permalink: /digital-arts/
 title: digital arts
 author_profile: true
-layout: landing
+layout: default
 ---
 
 {% include base_path %}
