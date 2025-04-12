@@ -50,11 +50,11 @@
     margin-right: 20px;
     border-radius: 50%;
     padding:0.5em;
-    border: 1px solid rgba(215, 216, 216, 0.5);
 
     &:hover{
       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
       transform: translateY(-10px);
+      border: 1px solid rgba(215, 216, 216, 0.5);
     }
   }
 
