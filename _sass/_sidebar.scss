@@ -96,7 +96,7 @@
   img {
     max-width: 175px;
     min-width: 75px;
-    // border-radius: 50%;
+    border-radius: 50%;
     // border: 1px solid rgba(215, 216, 216, 0.5);
 
     @include breakpoint($large) {
