@@ -19,15 +19,9 @@
 .landing {
   @include breakpoint($x-large);
 
-  .landing__inner-wrap {
-    @include full();
+  padding: 20px;
 
-    .landing__content{
-      @include full();
-    }
-  }
-
-  h2, h3, h4, h5, h6 {
+  h2, h3, h4 {
     margin-bottom: 0;
     font-family: $header-font-family;
   }
@@ -37,35 +31,69 @@
   }
 }
 
-
-.landing__content {
-  .landing__image{
-    width: 100px;
-
-    @include breakpoint($large) {
-      display: block;
-      width: auto;
-      height: auto;
-    }
-
-    img {
-      max-width: 200px;
-      min-width: 75px;
-      border-radius: 50%;
+.home-box {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  // border-bottom: 1px #efefef solid;
+  padding: 1em 1em 1em 1em;
+  margin: 0.8em 0;
   
-      @include breakpoint($large) {
-        padding: 5px;
+  .home-box-image{
+      justify-content: center;
+      display: flex;
+      width: 100%;
+      order: 2;
+      margin: 0 0.2em
+      img {
+          max-width: 350px;
+          // box-shadow: 3px 3px 6px #888;
+          object-fit: cover;
+
       }
-  
       &:hover {
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-        border: 1px solid rgba(91, 181, 219, 0.5);
+          box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+          border: 1px solid rgba(215, 216, 216, 0.5);
       }
-    }
   }
-
   
+  .home-box-text{
+      max-width: 100%;
+      order: 1;
+      text-align: justify;
+      hyphens: auto;
+      word-wrap: break-word;
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      -ms-hyphens: auto;
 
+      h3{
+          font-family: $header-font-family;
+          text-align: left;
+          font-weight: bold;
+      }
+      
+  }
   
+  @include breakpoint($medium) {
+      .home-box-image{
+          justify-content: left;
+          min-width: 200px;
+          max-width: 40%;
+          order: 1;
+      }
+      
+      .home-box-text{
+          justify-content: left;
+          padding-left: 1em;
+          padding-right: 1em;
+          max-width: 60%;
+          order: 2;
+      }
+
+  }
 }
+
 

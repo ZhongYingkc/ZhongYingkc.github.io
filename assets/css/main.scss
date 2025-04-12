@@ -33,6 +33,7 @@
 @import "page";
 @import "archive";
 @import "sidebar";
+@import "landing";
 
 @import "vendor/font-awesome/fontawesome";
 @import "vendor/font-awesome/solid";
@@ -191,3 +192,4 @@ h1:before, .anchor:before {
     font-weight: 500;
     font-family: $global-font-family;
 }
+
