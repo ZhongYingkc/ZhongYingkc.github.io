@@ -1,0 +1,71 @@
+/* ==========================================================================
+   landing
+   ========================================================================== */
+
+#main {
+  @include container;
+  @include clearfix;
+  margin-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  animation: intro 0.3s both;
+  animation-delay: 0.35s;
+
+  @include breakpoint($x-large) {
+    max-width: $x-large;
+  }
+}
+
+.landing {
+  @include breakpoint($x-large);
+
+  .landing__inner-wrap {
+    @include full();
+
+    .landing__content{
+      @include full();
+    }
+  }
+
+  h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+    font-family: $header-font-family;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+
+.landing__content {
+  .landing__image{
+    width: 100px;
+
+    @include breakpoint($large) {
+      display: block;
+      width: auto;
+      height: auto;
+    }
+
+    img {
+      max-width: 200px;
+      min-width: 75px;
+      border-radius: 50%;
+  
+      @include breakpoint($large) {
+        padding: 5px;
+      }
+  
+      &:hover {
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        border: 1px solid rgba(91, 181, 219, 0.5);
+      }
+    }
+  }
+
+  
+
+  
+}
+

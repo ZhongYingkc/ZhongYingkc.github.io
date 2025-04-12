@@ -345,7 +345,7 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   transition: var(--transition);
-  border: 1px solid rgba(91, 181, 219, 0.5);
+  border: 1px solid rgba(215, 216, 216, 0.5);
   margin-bottom: calc(var(--spacing-unit) * 0.6);  // 减小下方间距
 
   &:hover {
