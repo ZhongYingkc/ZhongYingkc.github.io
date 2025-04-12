@@ -1,6 +1,6 @@
 ---
-permalink: /digital-arts/
-title: digital arts
+permalink: /digital-media/
+title: digital media
 author_profile: true
 layout: default
 ---
