@@ -1,5 +1,5 @@
 ---
-layout: compress
+layout: null
 ---
 
 {% include base_path %}
@@ -15,15 +15,15 @@ layout: compress
 
     {% include browser-upgrade.html %}
 
-    <div id="main" role="main">
-      <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-        <div class="page__inner-wrap">
-          <section class="page__content" itemprop="text">
-            {{ content }}
-          </section>
-        </div>
-      </article>
+    <div id="main" class="landing">
+      <div class="home-box">
+          <div class="home-box-image">
+              <a href="/#about-me"><img src="/images/avatar.png" alt="avatarpic"></a>
+          </div>
+          <div classs="home-box-text">
+              <h3>Hi, it's Wing!</h3>
+          </div>
+      </div>
     </div>
 
     {% include scripts.html %}

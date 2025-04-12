@@ -33,10 +33,10 @@
 
 .home-box {
   display: flex;
-  justify-content: left;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  // flex-direction: row;
+  // flex-wrap: wrap;
   // border-bottom: 1px #efefef solid;
   padding: 1em 1em 1em 1em;
   margin: 0.8em 0;
@@ -45,7 +45,6 @@
       justify-content: center;
       display: flex;
       width: 100%;
-      order: 2;
       margin: 0 0.2em
       img {
           max-width: 350px;
@@ -61,7 +60,6 @@
   
   .home-box-text{
       max-width: 100%;
-      order: 1;
       text-align: justify;
       hyphens: auto;
       word-wrap: break-word;
