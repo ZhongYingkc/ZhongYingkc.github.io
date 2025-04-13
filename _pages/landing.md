@@ -1,5 +1,5 @@
 ---
-permalink: /landing/
+permalink: /
 title: homepape
 layout: landing
 ---
