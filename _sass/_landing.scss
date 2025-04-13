@@ -45,11 +45,11 @@
   @include breakpoint($large);
 
   img{
-    max-width: 200px;
+    max-width: 150px;
     height: auto;
     margin-right: 20px;
     border-radius: 50%;
-    padding:0.5em;
+    padding:0.2em;
 
     &:hover{
       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
