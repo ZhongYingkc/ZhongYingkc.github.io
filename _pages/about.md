@@ -16,6 +16,7 @@ author_profile: true
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
 {% endif %}
 
+<span class='anchor' id='about-me'></span>
 
 # WELCOME!
 I'm Ying Zhong, but just call me Wing—that’s how it’s pronounced in Cantonese. I'm a third-year Master’s student at the China Film High Tech Research Institute, Beijing Film Academy, where I also completed my BEng in Digital Media Technology. 
