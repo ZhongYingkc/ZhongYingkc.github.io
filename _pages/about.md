@@ -56,8 +56,8 @@ Currently, I’m working with [Dr. Feilin Han](http://feilinh.cn) in Virtual Rea
 - *2024/03*: New paper is accepted by ICME 2024 :)
 
 # EDUCATIONS
-- *2022/09 - 2025/07 (Expected)*, MA, Beijing Film Academy, Beijing. 
-- *2018/09 - 2022/06*, BEng, Beijing Film Academy, Beijing.
+- *2022/09 - 2025/07 (Expected)*, MA, Beijing Film Academy, Beijing
+- *2018/09 - 2022/06*, BEng, Beijing Film Academy, Beijing
 
 # AWARDS & SERVICES
 - *2024/12*, National Scholarship (Top 3%)
