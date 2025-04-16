@@ -11,15 +11,15 @@
 //   margin: 0 auto;
 // }
 
-#main {
-  @include clearfix;
-  animation: intro 0.3s both;
-  animation-delay: 0.35s;
+// #main {
+//   @include clearfix;
+//   animation: intro 0.3s both;
+//   animation-delay: 0.35s;
 
-  @include breakpoint($x-large) {
-    max-width: $x-large;
-  }
-}
+//   @include breakpoint($x-large) {
+//     max-width: $x-large;
+//   }
+// }
 
 .login-container {
   display: flex;
