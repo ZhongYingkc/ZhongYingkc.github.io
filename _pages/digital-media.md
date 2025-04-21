@@ -11,7 +11,7 @@ layout: default
 
 Click the images to see their video presentation.
 
-<div class='portfolio-box'><div class='portfolio-box-image'><div><div class="badge">Dome</div><img src='/images/bfahemisphere.png' alt="sym" width="100%"></div></div>
+<div class='portfolio-box'><div class='portfolio-box-image'><div><div class="badge">Dome</div><a href="https://www.bilibili.com/video/BV1kJLTz2EsN/"><img src='/images/bfahemisphere.png' alt="sym" width="100%"></a></div></div>
 </div>
 
 <div class='portfolio-box'><div class='portfolio-box-image'><div><div class="badge">Dome</div><a href="https://www.bilibili.com/video/BV1qhLTzuEMY/"><img src='/images/thebelief.png' alt="sym" width="100%"></a></div></div>
