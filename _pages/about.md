@@ -19,7 +19,9 @@ author_profile: true
 <span class='anchor' id='about-me'></span>
 
 # WELCOME!
-I'm Ying Zhong, but just call me Wing—that’s how it’s pronounced in Cantonese. I'm an incoming PhD student at the Indiana University Indianapolis. I completed my MA in Film Production Studies and BEng in Digital Media Technology at the School of Intelligent Imagery Engineering, Beijing Film Academy. During my MA and BEng Studies, I worked with [Dr. Feilin Han](http://feilinh.cn) in Virtual Reality Lab.
+I'm Ying Zhong, but just call me Wing—that’s how it’s pronounced in Cantonese. 
+
+I'm an incoming PhD student at the Indiana University Indianapolis. I completed my MA in Film Production Studies and BEng in Digital Media Technology at the School of Intelligent Imagery Engineering, Beijing Film Academy. During my MA and BEng Studies, I worked with [Dr. Feilin Han](http://feilinh.cn) in Virtual Reality Lab.
 
 
 <div class="notification-box">
