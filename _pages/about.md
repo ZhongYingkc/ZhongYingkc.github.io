@@ -19,9 +19,8 @@ author_profile: true
 <span class='anchor' id='about-me'></span>
 
 # WELCOME!
-I'm Ying Zhong, but just call me Wing—that’s how it’s pronounced in Cantonese. I'm a third-year Master’s student at the China Film High Tech Research Institute, Beijing Film Academy, where I also completed my BEng in Digital Media Technology. 
+I'm Ying Zhong, but just call me Wing—that’s how it’s pronounced in Cantonese. I'm an incoming PhD student at the Indiana University Indianapolis. I completed my MA in Film Production Studies and BEng in Digital Media Technology at the School of Intelligent Imagery Engineering, Beijing Film Academy. During my MA and BEng Studies, I worked with [Dr. Feilin Han](http://feilinh.cn) in Virtual Reality Lab.
 
-Currently, I’m working with [Dr. Feilin Han](http://feilinh.cn) in Virtual Reality Lab, diving into the exciting world of immersive media and exploring  the creative possibilities of VR.
 
 <div class="notification-box">
 <div class='notification-box-text' markdown="1">
@@ -56,7 +55,7 @@ Currently, I’m working with [Dr. Feilin Han](http://feilinh.cn) in Virtual Rea
 - *2024/03*: New paper is accepted by ICME 2024 :)
 
 # EDUCATIONS
-- *2022/09 - 2025/07 (Expected)*, MA, Beijing Film Academy, Beijing
+- *2022/09 - 2025/07*, MA, Beijing Film Academy, Beijing
 - *2018/09 - 2022/06*, BEng, Beijing Film Academy, Beijing
 
 # AWARDS & SERVICES
