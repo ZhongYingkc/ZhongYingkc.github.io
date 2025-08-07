@@ -18,10 +18,10 @@ author_profile: true
 
 <span class='anchor' id='about-me'></span>
 
-# Hi There,
-I'm Ying Zhong, but just call me Wing—that’s how it’s pronounced in Cantonese. 
+# Hi There!
+I'm Ying Zhong. You can call me Wing—that’s how it’s pronounced in Cantonese. 
 
-I'm an incoming PhD student at the Indiana University Indianapolis. I'll be joining the SETH Lab and working with Prof.Ekaterina Muravevskaia. 
+I'm an incoming PhD student at Department of Human-Centered Computing, Indiana University. I'll be joining the SETH Lab and working with Prof.Ekaterina Muravevskaia in 25 Fall. 
 
 I completed my MA in Film Production Studies and BEng in Digital Media Technology at the School of Intelligent Imagery Engineering, Beijing Film Academy. During my MA and BEng Studies, I worked with [Dr. Feilin Han](http://feilinh.cn) in Virtual Reality Lab.
 
@@ -64,7 +64,7 @@ I completed my MA in Film Production Studies and BEng in Digital Media Technolog
 
 # AWARDS & SERVICES
 - *2024/12*, National Scholarship (Top 3%)
-- *2022/01 - 2022/03*, Photography Volunteer, *Beijing Olympic and Paralympic Winter Games*
+- *2022/01 - 2022/03*, Professional Photography Volunteer, *Beijing Olympic and Paralympic Winter Games*
 - *2019/05 - 2020/12*, Technical Volunteer, *International Student Film and Video Festival (ISFVF)*
 
 
