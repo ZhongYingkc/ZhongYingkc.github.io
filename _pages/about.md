@@ -18,7 +18,7 @@ author_profile: true
 
 <span class='anchor' id='about-me'></span>
 
-# HI THERE,
+# Hi There,
 I'm Ying Zhong, but just call me Wing—that’s how it’s pronounced in Cantonese. 
 
 I'm an incoming PhD student at the Indiana University Indianapolis. I'll be joining the SETH Lab and working with Prof.Ekaterina Muravevskaia. 
