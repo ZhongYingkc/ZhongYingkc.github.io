@@ -56,7 +56,7 @@ I completed my MA in Film Production Studies and BEng in Digital Media Technolog
 
 # LATEST NEWS
 - *2025/11*: Presenting my poster in the Luddy 25th Symposium
-- *2025/04*: Attending CHI25 in Yokohama :D
+- *2025/04*: Attending CHI25 in Yokohama
 
 # EDUCATIONS
 - *2025/08 - Now*, PhD, Indiana University Indianapolis, IN
