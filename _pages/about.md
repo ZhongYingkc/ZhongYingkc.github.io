@@ -21,7 +21,7 @@ author_profile: true
 # Hi There!
 I'm Ying Zhong. You can call me Wing—that’s how it’s pronounced in Cantonese. 
 
-I'm a PhD student at Department of Human-Centered Computing, Indiana University. I work with Prof.Ekaterina Muravevskaia in the SETH Lab. 
+I'm a PhD student at Department of Human-Centered Computing, Indiana University. I work with    [Prof.Ekaterina Muravevskaia] (https://ekmurav.wixsite.com/empathy) in the SETH Lab. 
 
 I completed my MA in Film Production Studies and BEng in Digital Media Technology at the School of Intelligent Imagery Engineering, Beijing Film Academy. During my MA and BEng Studies, I worked with [Dr. Feilin Han](http://feilinh.cn) in Virtual Reality Lab.
 
@@ -36,9 +36,9 @@ I completed my MA in Film Production Studies and BEng in Digital Media Technolog
 <div class="highlight-block">
     <h3>HCI Researcher</h3>
     <ul>
-      <li>Empathy</li>
-      <li>VR, AR and XR</li>
       <li>Interaction Design</li>
+      <li>Affective Experience</li>
+      <li>VR, AR and XR</li>
     </ul>
   </div>
   
@@ -55,8 +55,8 @@ I completed my MA in Film Production Studies and BEng in Digital Media Technolog
 <!--My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).-->
 
 # LATEST NEWS
+- *2025/11*: Presenting my poster in the Luddy 25th Symposium
 - *2025/04*: Attending CHI25 in Yokohama :D
-- *2024/03*: New paper is accepted by ICME 2024 :)
 
 # EDUCATIONS
 - *2025/08 - Now*, PhD, Indiana University Indianapolis, IN
