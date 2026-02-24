@@ -37,7 +37,7 @@ I completed my MA in Film Production Studies and BEng in Digital Media Technolog
     <h3>HCI Researcher</h3>
     <ul>
       <li>Interaction Design</li>
-      <li>Affective Experience</li>
+      <li>Empathic Computing</li>
       <li>Immersive Technologies</li>
     </ul>
   </div>
