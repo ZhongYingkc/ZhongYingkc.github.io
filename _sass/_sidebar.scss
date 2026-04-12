@@ -97,11 +97,11 @@
     max-width: 175px;
     min-width: 75px;
     border-radius: 50%;
-    // border: 1px solid rgba(215, 216, 216, 0.5);
+    border: 1px solid rgba(215, 216, 216, 0.5);
 
     @include breakpoint($large) {
       padding: 5px;
-      // border: 1px solid #5bb5db22;
+      border: 1px solid #5bb5db22;
     }
 
     // &:hover {
