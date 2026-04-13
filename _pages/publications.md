@@ -28,7 +28,7 @@ You can find all my articles on my <a href="{{author.googlescholar}}">Google Sch
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Cybersickness</div><img src='/images/handCS.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-<h3>**The Correlation Analysis Between Cybersickness and Postural Behavior in Immersive VR Experience**</h3>
+**<h3>The Correlation Analysis Between Cybersickness and Postural Behavior in Immersive VR Experience</h3>**
 
 **Ying Zhong**, Ke-Ao Zhao, Leping Zhang, Fangming Zhao, Wentao Wei and Feilin Han
 
@@ -41,7 +41,7 @@ You can find all my articles on my <a href="{{author.googlescholar}}">Google Sch
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Cinematic VR</div><img src='/images/viewbehavior.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-<h3>**An Analytical Study of Visual Attention Behavior in Viewing Panoramic Video**</h3>
+<h4>An Analytical Study of Visual Attention Behavior in Viewing Panoramic Video</h4>
 
 Feilin Han, **Ying Zhong** and Ke-Ao Zhao
 
