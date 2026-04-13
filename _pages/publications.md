@@ -28,7 +28,7 @@ You can find all my articles on my <a href="{{author.googlescholar}}">Google Sch
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Cybersickness</div><img src='/images/handCS.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**<h3>The Correlation Analysis Between Cybersickness and Postural Behavior in Immersive VR Experience</h3>**
+<h4>The Correlation Analysis Between Cybersickness and Postural Behavior in Immersive VR Experience</h4>
 
 **Ying Zhong**, Ke-Ao Zhao, Leping Zhang, Fangming Zhao, Wentao Wei and Feilin Han
 
@@ -54,7 +54,7 @@ Feilin Han, **Ying Zhong** and Ke-Ao Zhao
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Cinematic VR</div><img src='/images/cvr.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-<h3>**Evaluating the Effect of Cinematography on the Viewing Experience in Immersive Environment**</h3>
+<h4>Evaluating the Effect of Cinematography on the Viewing Experience in Immersive Environment</h4>
 
 Feilin Han, **Ying Zhong** and Minxi Zhou
 
