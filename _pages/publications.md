@@ -25,7 +25,7 @@ classes: wide
 
 You can find all my articles on my <a href="{{author.googlescholar}}">Google Scholar profile</a>.
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICME 2024</div><img src='/images/handCS.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Cybersickness</div><img src='/images/handCS.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 <h3>The Correlation Analysis Between Cybersickness and Postural Behavior in Immersive VR Experience</h3>
@@ -38,7 +38,7 @@ You can find all my articles on my <a href="{{author.googlescholar}}">Google Sch
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">HCMA 2023</div><img src='/images/viewbehavior.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Cinematic VR</div><img src='/images/viewbehavior.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 <h3>An Analytical Study of Visual Attention Behavior in Viewing Panoramic Video</h3>
@@ -51,7 +51,7 @@ Feilin Han, *Ying Zhong* and Ke-Ao Zhao
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICME 2022</div><img src='/images/cvr.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Cinematic VR</div><img src='/images/cvr.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 <h3>Evaluating the Effect of Cinematography on the Viewing Experience in Immersive Environment</h3>
