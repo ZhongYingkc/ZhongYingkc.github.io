@@ -34,7 +34,7 @@ You can find all my articles on my <a href="{{author.googlescholar}}">Google Sch
 
 <!--[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>-->
 - This work investigates the relationship between cybersickness and hand posture behavior.
-- [[Paper]](https://feilinh.cn/ICME2024.pdf)
+- 📄[[Paper]](https://feilinh.cn/ICME2024.pdf)
 </div>
 </div>
 
@@ -47,7 +47,7 @@ Feilin Han, *Ying Zhong* and Ke-Ao Zhao
 
 <!--[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>-->
 - This work investigates viewing behavior, summarize attention distribution regulations and derive practical insights into the aspects of learning decision-making for panorama production.
-- [[Paper]](https://doi.org/10.1145/3606041.3618060) 
+- 📄[[Paper]](https://doi.org/10.1145/3606041.3618060) 
 </div>
 </div>
 
@@ -60,6 +60,6 @@ Feilin Han, *Ying Zhong* and Minxi Zhou
 
 <!--[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>-->
 - This work investigates the relationship between viewing experience and various factors in Cinematic VR, and proposes an attention–comfort–understanding analysis paradigm to help creators better capture viewers' attention and enhance narrative comprehension.
-- [[Paper]](https://feilinh.cn/ICME2022.pdf)
+- 📄[[Paper]](https://feilinh.cn/ICME2022.pdf)
 </div>
 </div>
