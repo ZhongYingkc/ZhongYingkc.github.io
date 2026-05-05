@@ -21,7 +21,7 @@ author_profile: true
 # Hi There!
 I'm Ying Zhong. You can call me Wing—that’s how it’s pronounced in Cantonese. 
 
-I'm a PhD student at Department of Human-Centered Computing, Indiana University. I work with    [Prof.Ekaterina Muravevskaia](https://ekmurav.wixsite.com/empathy) in the SETH Lab. 
+I'm a PhD student at Department of Human-Centered Computing, Indiana University. I work with    [Prof.Ekaterina Muravevskaia](https://ekmurav.wixsite.com/empathy) in the [SETH Lab](https://sethlab.lab.indianapolis.iu.edu/index.html). 
 
 I completed my MA in Film Production Studies and BEng in Digital Media Technology at the School of Intelligent Imagery Engineering, Beijing Film Academy. During my MA and BEng Studies, I worked with [Prof. Feilin Han](http://feilinh.cn) in Virtual Reality Lab.
 
@@ -37,8 +37,8 @@ I completed my MA in Film Production Studies and BEng in Digital Media Technolog
     <h3>HCI Researcher</h3>
     <ul>
       <li>Empathic Computing</li>
-      <li>Interaction Design</li>
-      <li>Immersive Technologies</li>
+      <li>Perceptual Computing</li>
+      <li>VR, AR, MR, and XR</li>
     </ul>
   </div>
   
