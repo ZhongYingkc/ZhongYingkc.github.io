@@ -45,7 +45,7 @@ I completed my MA in Film Production Studies and BEng in Digital Media Technolog
   <div class="highlight-block">
     <h3><em>Former</em> Digital Media Artist</h3>
     <ul>
-      <li>Immersive Content</li>
+      <li>Immersive Digital Art</li>
       <li>Virtual Production</li>
       <li>Photography</li>
     </ul>
