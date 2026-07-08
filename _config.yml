@@ -6,16 +6,17 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Wing's"
-description              : ""
+title                    : "Ying (Wing) Zhong"
+description              : "PhD student in Human-Computer Interaction at Indiana University Indianapolis, researching empathic computing and human-AI interaction."
 repository               : "ZhongYingkc/ZhongYingkc.github.io"
+url                      : "https://zhongyingkc.github.io"
 google_scholar_stats_use_cdn : true
 
 ## google analytics
 #google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
 #
 ## SEO Related
-#google_site_verification :  # get google_site_verification from https://search.google.com/search-console/about
+google_site_verification :  "google-site-verification" content="ARwoOWQcKt-TsNG6PH-p1O7nyvO2CC-WoC96843lpxk" #https://search.google.com/search-console/about
 #bing_site_verification   :  # get bing_site_verification from https://www.bing.com/webmasters/about
 #baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.baidu.com/login/index?u=/site/index
 
@@ -141,7 +142,7 @@ sass:
 # Outputting
 #permalink: /:categories/:title/
 permalink: /:title/
-timezone: Asia/Shanghai # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/Indiana/Indianapolis # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
