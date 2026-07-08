@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Ying (Wing) Zhong"
+title                    : "Wing's"
 description              : "PhD student in Human-Computer Interaction at Indiana University Indianapolis, researching empathic computing and human-AI interaction."
 repository               : "ZhongYingkc/ZhongYingkc.github.io"
 google_scholar_stats_use_cdn : true
