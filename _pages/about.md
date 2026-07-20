@@ -29,6 +29,7 @@ I completed my MA in Film Production Studies and BEng in Digital Media Technolog
 <div class="notification-box">
 <div class='notification-box-text' markdown="1">
 📢 I am working on an [Empathic AI study](https://zhongyingkc.github.io/empathetic-llms-user-study/). If you are interested in participating this study (e.g., sharing your perception and opinion on empathic response), please feel free to <a href="mailto:{{ author.email }}">reach out</a>.
+
 📢 I am seeking collaboration opportunities. If you are interested in my research and art work or would like to collaborate, please feel free to <a href="mailto:{{ author.email }}">reach out</a>.
 </div>
 </div>
