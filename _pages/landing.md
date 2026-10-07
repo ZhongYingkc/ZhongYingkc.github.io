@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: homepape
+title: homepage
 layout: landing
 ---
 
