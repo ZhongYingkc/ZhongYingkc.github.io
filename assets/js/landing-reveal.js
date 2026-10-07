@@ -9,6 +9,7 @@
 
   var canvas = portrait.querySelector(".landing-portrait__canvas");
   var photo = portrait.querySelector(".landing-portrait__source");
+  var sourceTopCrop = parseFloat(portrait.getAttribute("data-source-top-crop")) || 0;
   var context = canvas && canvas.getContext ? canvas.getContext("2d") : null;
   var layerCanvas = document.createElement("canvas");
   var layerContext = layerCanvas.getContext("2d");
@@ -262,7 +263,20 @@
 
     layerContext.globalCompositeOperation = "source-over";
     layerContext.globalAlpha = 1;
-    layerContext.drawImage(photo, 0, 0, width, height);
+    var sourceY = photo.naturalHeight * sourceTopCrop;
+    var sourceHeight = photo.naturalHeight - sourceY;
+
+    layerContext.drawImage(
+      photo,
+      0,
+      sourceY,
+      photo.naturalWidth,
+      sourceHeight,
+      0,
+      0,
+      width,
+      height
+    );
 
     maskContext.save();
     maskContext.filter = reducedMotion ? "none" : "blur(4px)";

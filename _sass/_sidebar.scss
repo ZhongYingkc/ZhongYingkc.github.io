@@ -80,33 +80,63 @@
 }
 
 .author__avatar {
-  display: table-cell;
+  position: relative;
+  display: block;
+  flex: 0 0 75px;
   vertical-align: top;
   width: 75px;
-  
-  // set width only, for non-square avatars
-  // height: 36px;
+  height: 75px;
+  border-radius: 50%;
 
   @include breakpoint($large) {
     display: block;
-    width: auto;
-    height: auto;
+    width: 175px;
+    height: 175px;
   }
 
-  img {
-    max-width: 175px;
-    min-width: 75px;
-    border-radius: 50%;
-    border: 1px solid rgba(215, 216, 216, 0.5);
+  &:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  }
+}
 
-    @include breakpoint($large) {
-      padding: 5px;
-      border: 1px solid #5bb5db22;
-    }
+.author__avatar-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid rgba(215, 216, 216, 0.5);
+  transition: opacity 0.32s ease, transform 0.4s ease;
 
-    &:hover {
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-    }
+  @include breakpoint($large) {
+    padding: 5px;
+    border: 1px solid #5bb5db22;
+  }
+}
+
+.author__avatar-image--hover {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: scale(0.97);
+}
+
+.author__avatar--swap:hover {
+  .author__avatar-image--default {
+    opacity: 0;
+    transform: scale(1.03);
+  }
+
+  .author__avatar-image--hover {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .author__avatar-image {
+    transition: none;
   }
 }
 
@@ -308,4 +338,3 @@
     display: none;
   }
 }
-

@@ -23,7 +23,8 @@ google_site_verification : "ARwoOWQcKt-TsNG6PH-p1O7nyvO2CC-WoC96843lpxk"
 author:
   name             : "Ying (Wing) Zhong"
   chinesename      : "钟颖"
-  avatar           : "/images/avatar1.jpg"
+  avatar           : "/images/avatar-illustration.jpeg"
+  avatar_hover     : "/images/avatar1.jpg"
   bio              : "PhD student at Human-Centered Computing, IU"
   location         : "Indianapolis, IN"
 #  employer         :
