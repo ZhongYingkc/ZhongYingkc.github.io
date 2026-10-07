@@ -10,8 +10,12 @@
   var canvas = portrait.querySelector(".landing-portrait__canvas");
   var photo = portrait.querySelector(".landing-portrait__source");
   var context = canvas && canvas.getContext ? canvas.getContext("2d") : null;
+  var layerCanvas = document.createElement("canvas");
+  var layerContext = layerCanvas.getContext("2d");
+  var maskCanvas = document.createElement("canvas");
+  var maskContext = maskCanvas.getContext("2d");
 
-  if (!canvas || !photo || !context) {
+  if (!canvas || !photo || !context || !layerContext || !maskContext) {
     return;
   }
 
@@ -53,7 +57,13 @@
     pixelRatio = nextRatio;
     canvas.width = Math.round(width * pixelRatio);
     canvas.height = Math.round(height * pixelRatio);
+    layerCanvas.width = canvas.width;
+    layerCanvas.height = canvas.height;
+    maskCanvas.width = canvas.width;
+    maskCanvas.height = canvas.height;
     context.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
+    layerContext.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
+    maskContext.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
   }
 
   function spring(valueKey, velocityKey, target, stiffness, damping) {
@@ -63,35 +73,35 @@
   }
 
   function createFluidPath(centerX, centerY, halfWidth, halfHeight, time, phaseOffset) {
-    var phase = (time * 0.0018) + phaseOffset;
+    var phase = (time * 0.0034) + phaseOffset;
     var left = centerX - halfWidth;
     var right = centerX + halfWidth;
-    var topWaveA = Math.sin(phase) * halfHeight * 0.13;
-    var topWaveB = Math.sin((phase * 1.37) + 1.1) * halfHeight * 0.1;
-    var bottomWaveA = Math.sin((phase * 1.19) + 2.2) * halfHeight * 0.12;
-    var bottomWaveB = Math.sin((phase * 1.53) + 3.4) * halfHeight * 0.09;
-    var sideWave = Math.sin((phase * 0.83) + 0.7) * halfHeight * 0.1;
+    var topWaveA = Math.sin(phase) * halfHeight * 0.24;
+    var topWaveB = Math.sin((phase * 1.37) + 1.1) * halfHeight * 0.16;
+    var bottomWaveA = Math.sin((phase * 1.19) + 2.2) * halfHeight * 0.22;
+    var bottomWaveB = Math.sin((phase * 1.53) + 3.4) * halfHeight * 0.15;
+    var sideWave = Math.sin((phase * 0.83) + 0.7) * halfHeight * 0.18;
     var path = new Path2D();
 
     path.moveTo(left, centerY + sideWave);
     path.bezierCurveTo(
-      left + (halfWidth * 0.12), centerY - (halfHeight * 0.72) + topWaveA,
-      centerX - (halfWidth * 0.48), centerY - halfHeight + topWaveB,
+      left + (halfWidth * 0.05), centerY - (halfHeight * 0.58) + topWaveA,
+      centerX - (halfWidth * 0.5), centerY - halfHeight + topWaveB,
       centerX, centerY - halfHeight - topWaveA
     );
     path.bezierCurveTo(
-      centerX + (halfWidth * 0.46), centerY - halfHeight + topWaveA,
-      right - (halfWidth * 0.1), centerY - (halfHeight * 0.68) - topWaveB,
+      centerX + (halfWidth * 0.5), centerY - halfHeight + topWaveA,
+      right - (halfWidth * 0.05), centerY - (halfHeight * 0.58) - topWaveB,
       right, centerY - sideWave
     );
     path.bezierCurveTo(
-      right - (halfWidth * 0.1), centerY + (halfHeight * 0.7) + bottomWaveA,
-      centerX + (halfWidth * 0.48), centerY + halfHeight - bottomWaveB,
+      right - (halfWidth * 0.05), centerY + (halfHeight * 0.58) + bottomWaveA,
+      centerX + (halfWidth * 0.5), centerY + halfHeight - bottomWaveB,
       centerX, centerY + halfHeight + bottomWaveA
     );
     path.bezierCurveTo(
-      centerX - (halfWidth * 0.46), centerY + halfHeight - bottomWaveA,
-      left + (halfWidth * 0.12), centerY + (halfHeight * 0.72) + bottomWaveB,
+      centerX - (halfWidth * 0.5), centerY + halfHeight - bottomWaveA,
+      left + (halfWidth * 0.05), centerY + (halfHeight * 0.58) + bottomWaveB,
       left, centerY + sideWave
     );
     path.closePath();
@@ -111,31 +121,51 @@
       : visibleOpen;
     var centerX = state.x * width;
     var centerY = state.y * height;
-    var halfWidth = width * (0.012 + (easedOpen * 0.238));
-    var halfHeight = height * (0.003 + (easedOpen * 0.072));
     var motionTime = reducedMotion ? 0 : time;
+    var breathing = reducedMotion ? 0 : Math.sin(time * 0.0024) * 0.045;
+    var halfWidth = width * (0.012 + (easedOpen * 0.238)) * (1 + breathing);
+    var halfHeight = height * (0.003 + (easedOpen * 0.072)) * (1 + (breathing * 0.7));
     var revealPath = createFluidPath(centerX, centerY, halfWidth, halfHeight, motionTime, 0);
 
-    context.save();
-    context.clip(revealPath);
-    context.globalAlpha = clamp(easedOpen * 1.08, 0, 1);
-    context.drawImage(photo, 0, 0, width, height);
-    context.restore();
+    layerContext.clearRect(0, 0, width, height);
+    maskContext.clearRect(0, 0, width, height);
 
-    var edgePath = createFluidPath(
-      centerX,
-      centerY,
-      halfWidth + (2.5 * easedOpen),
-      halfHeight + (1.5 * easedOpen),
-      motionTime,
-      1.6
+    layerContext.globalCompositeOperation = "source-over";
+    layerContext.globalAlpha = clamp(easedOpen * 1.08, 0, 1);
+    layerContext.drawImage(photo, 0, 0, width, height);
+
+    maskContext.save();
+    maskContext.filter = reducedMotion ? "none" : "blur(4px)";
+    maskContext.fillStyle = "#fff";
+    maskContext.fill(revealPath);
+    maskContext.restore();
+
+    layerContext.globalCompositeOperation = "destination-in";
+    layerContext.globalAlpha = 1;
+    layerContext.drawImage(
+      maskCanvas,
+      0,
+      0,
+      maskCanvas.width,
+      maskCanvas.height,
+      0,
+      0,
+      width,
+      height
     );
+    layerContext.globalCompositeOperation = "source-over";
 
-    context.save();
-    context.strokeStyle = "rgba(24, 35, 45, " + (0.11 * clamp(easedOpen, 0, 1)) + ")";
-    context.lineWidth = 1;
-    context.stroke(edgePath);
-    context.restore();
+    context.drawImage(
+      layerCanvas,
+      0,
+      0,
+      layerCanvas.width,
+      layerCanvas.height,
+      0,
+      0,
+      width,
+      height
+    );
   }
 
   function render(time) {
@@ -181,8 +211,8 @@
   function setPointer(event) {
     var bounds = portrait.getBoundingClientRect();
 
-    state.targetX = clamp((event.clientX - bounds.left) / bounds.width, 0.2, 0.8);
-    state.targetY = clamp((event.clientY - bounds.top) / bounds.height, 0.22, 0.62);
+    state.targetX = clamp((event.clientX - bounds.left) / bounds.width, 0.06, 0.94);
+    state.targetY = clamp((event.clientY - bounds.top) / bounds.height, 0.06, 0.94);
     startAnimation();
   }
 
