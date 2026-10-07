@@ -24,6 +24,10 @@
   var animationFrame = null;
   var pointerTrail = [];
   var followDelay = 110;
+  var waterTrail = [];
+  var lastWaterTrailPoint = null;
+  var waterTrailSequence = 0;
+  var waterTrailLifetime = 720;
   var width = 0;
   var height = 0;
   var pixelRatio = 1;
@@ -101,12 +105,13 @@
     state.targetY = firstPoint.y + ((secondPoint.y - firstPoint.y) * progress);
   }
 
-  function createFluidPath(centerX, centerY, halfWidth, halfHeight, time, phaseOffset) {
+  function createFluidPath(centerX, centerY, halfWidth, halfHeight, time, phaseOffset, dragStrength) {
     var phase = (time * 0.0022) + phaseOffset;
     var pointCount = 24;
     var points = [];
-    var velocityX = state.xVelocity * width;
-    var velocityY = state.yVelocity * height;
+    var drag = typeof dragStrength === "number" ? dragStrength : 1;
+    var velocityX = state.xVelocity * width * drag;
+    var velocityY = state.yVelocity * height * drag;
     var velocityLength = Math.sqrt((velocityX * velocityX) + (velocityY * velocityY));
     var directionX = velocityLength > 0.001 ? velocityX / velocityLength : 0;
     var directionY = velocityLength > 0.001 ? velocityY / velocityLength : 0;
@@ -154,10 +159,88 @@
     return path;
   }
 
+  function updateWaterTrail(time, halfWidth, halfHeight) {
+    if (reducedMotion || state.targetOpen <= 0 || state.open < 0.45) {
+      lastWaterTrailPoint = null;
+      return;
+    }
+
+    if (!lastWaterTrailPoint) {
+      lastWaterTrailPoint = {
+        x: state.x,
+        y: state.y,
+        time: time
+      };
+      return;
+    }
+
+    var deltaX = (state.x - lastWaterTrailPoint.x) * width;
+    var deltaY = (state.y - lastWaterTrailPoint.y) * height;
+    var distance = Math.sqrt((deltaX * deltaX) + (deltaY * deltaY));
+    var minimumDistance = Math.max(8, width * 0.015);
+
+    if (distance < minimumDistance) {
+      return;
+    }
+
+    waterTrailSequence += 1;
+    waterTrail.push({
+      x: lastWaterTrailPoint.x,
+      y: lastWaterTrailPoint.y,
+      born: time,
+      widthRatio: (halfWidth / width) * (0.58 + ((waterTrailSequence % 3) * 0.07)),
+      heightRatio: (halfHeight / height) * (0.58 + ((waterTrailSequence % 3) * 0.07)),
+      phase: waterTrailSequence * 0.83
+    });
+
+    if (waterTrail.length > 16) {
+      waterTrail.shift();
+    }
+
+    lastWaterTrailPoint = {
+      x: state.x,
+      y: state.y,
+      time: time
+    };
+  }
+
+  function drawWaterTrailMask(time) {
+    var activeTrail = [];
+    var index;
+
+    for (index = 0; index < waterTrail.length; index += 1) {
+      var stain = waterTrail[index];
+      var progress = (time - stain.born) / waterTrailLifetime;
+
+      if (progress >= 1) {
+        continue;
+      }
+
+      var spread = 1 + (progress * 0.12);
+      var opacity = Math.pow(1 - progress, 1.65) * 0.38;
+      var stainPath = createFluidPath(
+        stain.x * width,
+        stain.y * height,
+        stain.widthRatio * width * spread,
+        stain.heightRatio * height * spread,
+        time,
+        stain.phase,
+        0
+      );
+
+      maskContext.globalAlpha = opacity;
+      maskContext.fill(stainPath);
+      activeTrail.push(stain);
+    }
+
+    maskContext.globalAlpha = 1;
+    waterTrail = activeTrail;
+  }
+
   function drawReveal(time) {
     var visibleOpen = clamp(state.open, 0, 1.06);
 
-    if (visibleOpen < 0.002 || !photo.complete) {
+    if ((visibleOpen < 0.002 && !waterTrail.length) || !photo.complete) {
       return;
     }
 
@@ -170,19 +253,28 @@
     var breathing = reducedMotion ? 0 : Math.sin(time * 0.0018) * 0.045;
     var halfWidth = width * (0.008 + (easedOpen * 0.16)) * (1 + breathing);
     var halfHeight = height * (0.006 + (easedOpen * 0.095)) * (1 + (breathing * 0.7));
-    var revealPath = createFluidPath(centerX, centerY, halfWidth, halfHeight, motionTime, 0);
+    var revealPath = createFluidPath(centerX, centerY, halfWidth, halfHeight, motionTime, 0, 1);
+
+    updateWaterTrail(time, halfWidth, halfHeight);
 
     layerContext.clearRect(0, 0, width, height);
     maskContext.clearRect(0, 0, width, height);
 
     layerContext.globalCompositeOperation = "source-over";
-    layerContext.globalAlpha = clamp(easedOpen * 1.08, 0, 1);
+    layerContext.globalAlpha = 1;
     layerContext.drawImage(photo, 0, 0, width, height);
 
     maskContext.save();
     maskContext.filter = reducedMotion ? "none" : "blur(4px)";
     maskContext.fillStyle = "#fff";
-    maskContext.fill(revealPath);
+    drawWaterTrailMask(time);
+
+    if (visibleOpen >= 0.002) {
+      maskContext.globalAlpha = clamp(easedOpen * 1.08, 0, 1);
+      maskContext.fill(revealPath);
+    }
+
+    maskContext.globalAlpha = 1;
     maskContext.restore();
 
     layerContext.globalCompositeOperation = "destination-in";
@@ -238,7 +330,8 @@
       || Math.abs(state.x - state.targetX) > 0.001
       || Math.abs(state.y - state.targetY) > 0.001
       || Math.abs(state.xVelocity) > 0.001
-      || Math.abs(state.yVelocity) > 0.001;
+      || Math.abs(state.yVelocity) > 0.001
+      || waterTrail.length > 0;
 
     if (state.targetOpen > 0 || unsettled) {
       animationFrame = window.requestAnimationFrame(render);
@@ -280,6 +373,7 @@
 
   function closeReveal() {
     pointerTrail = [];
+    lastWaterTrailPoint = null;
     state.targetOpen = 0;
     state.targetX = 0.5;
     state.targetY = 0.36;
