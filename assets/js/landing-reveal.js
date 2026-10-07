@@ -83,10 +83,14 @@
   }
 
   function updateDeformation() {
-    var targetX = state.xVelocity * width * 3.4;
-    var targetY = state.yVelocity * height * 3.4;
+    var horizontalLag = (state.targetX - state.x) * width;
+    var verticalLag = (state.targetY - state.y) * height;
+    var horizontalMomentum = state.xVelocity * width;
+    var verticalMomentum = state.yVelocity * height;
+    var targetX = (horizontalLag * 2.8) + (horizontalMomentum * 7.5);
+    var targetY = (verticalLag * 2.8) + (verticalMomentum * 7.5);
     var targetLength = Math.sqrt((targetX * targetX) + (targetY * targetY));
-    var maximumLength = width * 0.14;
+    var maximumLength = Math.min(width, height) * 0.24;
 
     if (targetLength > maximumLength) {
       targetX *= maximumLength / targetLength;
@@ -95,8 +99,8 @@
     }
 
     var isMoving = targetLength > 0.75;
-    var stiffness = isMoving ? 0.16 : 0.045;
-    var damping = isMoving ? 0.68 : 0.84;
+    var stiffness = isMoving ? 0.22 : 0.055;
+    var damping = isMoving ? 0.7 : 0.82;
 
     deformation.xVelocity += (targetX - deformation.x) * stiffness;
     deformation.yVelocity += (targetY - deformation.y) * stiffness;
@@ -142,7 +146,11 @@
     );
     var directionX = deformationLength > 0.5 ? deformation.x / deformationLength : 0;
     var directionY = deformationLength > 0.5 ? deformation.y / deformationLength : 0;
-    var deformationStrength = clamp(deformationLength / (width * 0.14), 0, 1);
+    var deformationStrength = clamp(
+      deformationLength / (Math.min(width, height) * 0.24),
+      0,
+      1
+    );
     var path = new Path2D();
     var index;
 
@@ -154,11 +162,15 @@
         + (Math.sin((angle * 5) - (phase * 1.25)) * 0.045)
         + (Math.sin((angle * 2) + (phase * 0.72)) * 0.03);
       var directionDot = (cosine * directionX) + (sine * directionY);
-      var forwardPull = Math.pow(Math.max(0, directionDot), 2.2) * deformationLength * 0.46;
-      var rearLag = Math.pow(Math.max(0, -directionDot), 2) * deformationLength * 0.68;
+      var forwardPull = Math.pow(Math.max(0, directionDot), 1.35)
+        * deformationLength
+        * 0.5;
+      var rearLag = Math.pow(Math.max(0, -directionDot), 1.35)
+        * deformationLength
+        * 0.82;
       var sideInfluence = 1 - Math.abs(directionDot);
       var sideCompression = 1 - (
-        deformationStrength * sideInfluence * sideInfluence * 0.11
+        deformationStrength * sideInfluence * sideInfluence * 0.14
       );
       var directionalOffset = forwardPull - rearLag;
 
