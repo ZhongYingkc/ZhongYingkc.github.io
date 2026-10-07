@@ -11,7 +11,7 @@ layout: null
     {% include head/custom.html %}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&amp;display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -37,7 +37,7 @@ layout: null
             draggable="false"
           >
           <img
-            class="landing-portrait__image landing-portrait__photo"
+            class="landing-portrait__source"
             src="{{ '/images/landing-photo.png' | relative_url }}"
             alt=""
             width="2048"
@@ -45,6 +45,7 @@ layout: null
             aria-hidden="true"
             draggable="false"
           >
+          <canvas class="landing-portrait__canvas" aria-hidden="true"></canvas>
         </a>
 
         <div class="landing-intro">
