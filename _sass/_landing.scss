@@ -2,100 +2,165 @@
    landing
    ========================================================================== */
 
-// .login-container {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   min-height: 100vh;
-//   padding: 1em;
-//   margin: 0 auto;
-// }
-
-// #main {
-//   @include clearfix;
-//   animation: intro 0.3s both;
-//   animation-delay: 0.35s;
-
-//   @include breakpoint($x-large) {
-//     max-width: $x-large;
-//   }
-// }
-
-.login-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  // min-height: 100vh;
-  padding: 1em;
-  margin: 0 auto;
-}
-
 .landing {
-  @include breakpoint($x-large);
+  --reveal-x: 50%;
+  --reveal-y: 48%;
+  --reveal-radius-x: clamp(9rem, 23vw, 18rem);
+  --reveal-radius-y: clamp(3.75rem, 9vw, 7rem);
+  --reveal-frame-width: clamp(18rem, 46vw, 36rem);
+  --reveal-frame-height: clamp(7.5rem, 18vw, 14rem);
+
   display: flex;
-  padding: 20px;
   align-items: center;
   justify-content: center;
+  min-height: calc(100vh - 4.5rem);
+  min-height: calc(100svh - 4.5rem);
+  padding: clamp(1rem, 3vw, 2.5rem);
+  overflow: hidden;
+  background: #fff;
+  animation: intro 0.45s both;
+  animation-delay: 0.15s;
 
-  h2, h3, h4 {
-    margin-bottom: 0;
-    font-family: $header-font-family;
-  }
+  @media (max-width: 37.5em) {
+    --reveal-radius-x: clamp(8rem, 38vw, 12rem);
+    --reveal-radius-y: clamp(3.5rem, 16vw, 5.5rem);
+    --reveal-frame-width: clamp(16rem, 76vw, 24rem);
+    --reveal-frame-height: clamp(7rem, 32vw, 11rem);
 
-  img {
-    width: 100%;
+    align-items: flex-start;
+    padding-top: 1.5rem;
   }
 }
 
-.home-box {
+.landing-hero {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  // flex-wrap: wrap;
-  // border-bottom: 1px #efefef solid;
-  padding: 1em 1em 1em 1em;
-  margin: 0.8em 0;
-  @include breakpoint($large);
-
-  img{
-    max-width: 150px;
-    height: auto;
-    margin-right: 20px;
-    border-radius: 50%;
-    padding:0.2em;
-
-    &:hover{
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-      transform: translateY(-10px);
-      // border: 1px solid rgba(215, 216, 216, 0.5);
-    }
-  }
-
-  .home-box-text {
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    hyphens: auto;
-    word-wrap: break-word;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-
-    h1 {
-      font-family: $header-font-family;
-      font-weight: 200;
-    }
-  }
-
-  img:hover + .home-box-text {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
+.landing-portrait {
+  position: relative;
+  display: block;
+  width: 72vmin;
+  max-width: 52rem;
+  aspect-ratio: 1;
+  color: inherit;
+  cursor: crosshair;
+  isolation: isolate;
+  -webkit-tap-highlight-color: transparent;
 
+  &:focus-visible {
+    outline: 2px solid #111;
+    outline-offset: 0.5rem;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    left: var(--reveal-x);
+    top: var(--reveal-y);
+    width: var(--reveal-frame-width);
+    height: var(--reveal-frame-height);
+    border: 1px solid rgba(17, 17, 17, 0.18);
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.82);
+    transition: opacity 180ms ease, transform 320ms cubic-bezier(0.2, 0.75, 0.25, 1), left 80ms linear, top 80ms linear;
+  }
+
+  &.is-interacting::after,
+  &:focus-visible::after,
+  &:active::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.landing-portrait__image {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: contain;
+  object-position: center;
+  border: 0;
+  border-radius: 0;
+  user-select: none;
+}
+
+.landing-portrait__line-art {
+  z-index: 1;
+}
+
+.landing-portrait__photo {
+  z-index: 2;
+  opacity: 0;
+  -webkit-clip-path: ellipse(0 0 at var(--reveal-x) var(--reveal-y));
+  clip-path: ellipse(0 0 at var(--reveal-x) var(--reveal-y));
+  transition: opacity 150ms ease, -webkit-clip-path 320ms cubic-bezier(0.2, 0.75, 0.25, 1), clip-path 320ms cubic-bezier(0.2, 0.75, 0.25, 1);
+}
+
+.landing-portrait.is-interacting .landing-portrait__photo,
+.landing-portrait:focus-visible .landing-portrait__photo,
+.landing-portrait:active .landing-portrait__photo {
+  opacity: 1;
+  -webkit-clip-path: ellipse(var(--reveal-radius-x) var(--reveal-radius-y) at var(--reveal-x) var(--reveal-y));
+  clip-path: ellipse(var(--reveal-radius-x) var(--reveal-radius-y) at var(--reveal-x) var(--reveal-y));
+}
+
+.landing-intro {
+  position: relative;
+  z-index: 4;
+  margin-top: 0.5rem;
+  text-align: center;
+  pointer-events: none;
+
+  h1 {
+    margin: 0;
+    font-family: $header-font-family;
+    font-size: clamp(1.6rem, 3vw, 2.35rem);
+    font-weight: 300;
+    letter-spacing: -0.03em;
+  }
+
+  p {
+    margin: 0.35rem 0 0;
+    color: #707070;
+    font-family: $sans-serif;
+    font-size: clamp(0.72rem, 1.1vw, 0.88rem);
+    letter-spacing: 0.04em;
+  }
+}
+
+@media (hover: none) {
+  .landing-portrait {
+    cursor: pointer;
+  }
+
+  .landing-intro p {
+    &::before {
+      content: "Tap once to reveal, again to enter.";
+    }
+
+    font-size: 0;
+
+    &::before {
+      font-size: 0.78rem;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .landing,
+  .landing-portrait::after,
+  .landing-portrait__photo {
+    animation: none;
+    transition: none;
+  }
+}

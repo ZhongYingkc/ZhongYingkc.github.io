@@ -16,18 +16,43 @@ layout: null
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
-    <div id="main" class="landing">
-      <div class="login-container">
-          <div class="home-box">
-            <a href="{{ '/about/' | relative_url }}" target="_self"><img src="/images/avatar.png" alt="avatarpic"></a>
-              <div class="home-box-text">
-                  <h1>Hi, it's Wing!</h1>
-              </div>
-          </div>
+    <main id="main" class="landing">
+      <div class="landing-hero">
+        <a
+          class="landing-portrait"
+          href="{{ '/about/' | relative_url }}"
+          aria-label="Enter Wing's website"
+          data-landing-reveal
+        >
+          <img
+            class="landing-portrait__image landing-portrait__line-art"
+            src="{{ '/images/landing-line-art.jpeg' | relative_url }}"
+            alt="Line drawing of Wing wearing a VR headset"
+            width="1024"
+            height="1024"
+            fetchpriority="high"
+            draggable="false"
+          >
+          <img
+            class="landing-portrait__image landing-portrait__photo"
+            src="{{ '/images/landing-photo.png' | relative_url }}"
+            alt=""
+            width="2048"
+            height="2048"
+            aria-hidden="true"
+            draggable="false"
+          >
+        </a>
+
+        <div class="landing-intro">
+          <h1>Hi, it's Wing!</h1>
+          <p>Move across the portrait to reveal another view.</p>
+        </div>
       </div>
-    </div>
+    </main>
 
     {% include scripts.html %}
+    <script src="{{ '/assets/js/landing-reveal.js' | relative_url }}" defer></script>
 
   </body>
 </html>
