@@ -15,11 +15,30 @@
     }
 
     var bounds = portrait.getBoundingClientRect();
-    var x = event.clientX - bounds.left;
-    var y = event.clientY - bounds.top;
+    var rawX = event.clientX - bounds.left;
+    var rawY = event.clientY - bounds.top;
+    var x = Math.max(bounds.width * 0.04, Math.min(rawX, bounds.width * 0.96));
+    var y = Math.max(bounds.height * 0.16, Math.min(rawY, bounds.height * 0.84));
+    var horizontal = (rawX / bounds.width) - 0.5;
+    var vertical = (rawY / bounds.height) - 0.5;
 
     portrait.style.setProperty("--reveal-x", x + "px");
     portrait.style.setProperty("--reveal-y", y + "px");
+    portrait.style.setProperty("--line-shift-x", (horizontal * -7).toFixed(2) + "px");
+    portrait.style.setProperty("--line-shift-y", (vertical * -5).toFixed(2) + "px");
+    portrait.style.setProperty("--line-rotate", (horizontal * -0.7).toFixed(2) + "deg");
+    portrait.style.setProperty("--photo-shift-x", (horizontal * 10).toFixed(2) + "px");
+    portrait.style.setProperty("--photo-shift-y", (vertical * 7).toFixed(2) + "px");
+    portrait.style.setProperty("--photo-rotate", (horizontal * 1.1).toFixed(2) + "deg");
+  }
+
+  function resetLayers() {
+    portrait.style.setProperty("--line-shift-x", "0px");
+    portrait.style.setProperty("--line-shift-y", "0px");
+    portrait.style.setProperty("--line-rotate", "0deg");
+    portrait.style.setProperty("--photo-shift-x", "0px");
+    portrait.style.setProperty("--photo-shift-y", "0px");
+    portrait.style.setProperty("--photo-rotate", "0deg");
   }
 
   portrait.addEventListener("pointerenter", function (event) {
@@ -35,6 +54,7 @@
 
   portrait.addEventListener("pointerleave", function () {
     portrait.classList.remove("is-interacting");
+    resetLayers();
   });
 
   portrait.addEventListener("focus", function () {
@@ -43,6 +63,7 @@
 
   portrait.addEventListener("blur", function () {
     portrait.classList.remove("is-interacting");
+    resetLayers();
   });
 
   portrait.addEventListener("click", function (event) {
@@ -62,5 +83,6 @@
 
     touchArmed = false;
     portrait.classList.remove("is-interacting");
+    resetLayers();
   });
 })();

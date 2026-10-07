@@ -5,10 +5,14 @@
 .landing {
   --reveal-x: 50%;
   --reveal-y: 48%;
-  --reveal-radius-x: clamp(9rem, 23vw, 18rem);
-  --reveal-radius-y: clamp(3.75rem, 9vw, 7rem);
-  --reveal-frame-width: clamp(18rem, 46vw, 36rem);
-  --reveal-frame-height: clamp(7.5rem, 18vw, 14rem);
+  --reveal-half: clamp(2.8rem, 6.5vw, 5rem);
+  --reveal-wave: clamp(0.35rem, 1vw, 0.85rem);
+  --line-shift-x: 0px;
+  --line-shift-y: 0px;
+  --line-rotate: 0deg;
+  --photo-shift-x: 0px;
+  --photo-shift-y: 0px;
+  --photo-rotate: 0deg;
 
   display: flex;
   align-items: center;
@@ -22,10 +26,8 @@
   animation-delay: 0.15s;
 
   @media (max-width: 37.5em) {
-    --reveal-radius-x: clamp(8rem, 38vw, 12rem);
-    --reveal-radius-y: clamp(3.5rem, 16vw, 5.5rem);
-    --reveal-frame-width: clamp(16rem, 76vw, 24rem);
-    --reveal-frame-height: clamp(7rem, 32vw, 11rem);
+    --reveal-half: clamp(2.5rem, 12vw, 4rem);
+    --reveal-wave: clamp(0.3rem, 2vw, 0.65rem);
 
     align-items: flex-start;
     padding-top: 1.5rem;
@@ -62,14 +64,17 @@
     z-index: 3;
     left: var(--reveal-x);
     top: var(--reveal-y);
-    width: var(--reveal-frame-width);
-    height: var(--reveal-frame-height);
-    border: 1px solid rgba(17, 17, 17, 0.18);
+    width: 1.35rem;
+    height: 1.35rem;
+    border: 1px solid rgba(17, 17, 17, 0.46);
     border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 0 0.45rem rgba(255, 255, 255, 0.2);
     opacity: 0;
     pointer-events: none;
-    transform: translate(-50%, -50%) scale(0.82);
-    transition: opacity 180ms ease, transform 320ms cubic-bezier(0.2, 0.75, 0.25, 1), left 80ms linear, top 80ms linear;
+    transform: translate(-50%, -50%) scale(0.35);
+    transition: opacity 150ms ease, transform 260ms cubic-bezier(0.2, 0.75, 0.25, 1), left 70ms linear, top 70ms linear;
+    backdrop-filter: blur(2px);
   }
 
   &.is-interacting::after,
@@ -92,26 +97,71 @@
   border: 0;
   border-radius: 0;
   user-select: none;
+  will-change: transform, clip-path;
 }
 
 .landing-portrait__line-art {
   z-index: 1;
+  transform: translate(var(--line-shift-x), var(--line-shift-y)) rotate(var(--line-rotate)) scale(1.012);
+  transition: transform 480ms cubic-bezier(0.2, 0.75, 0.25, 1);
 }
 
 .landing-portrait__photo {
   z-index: 2;
   opacity: 0;
-  -webkit-clip-path: ellipse(0 0 at var(--reveal-x) var(--reveal-y));
-  clip-path: ellipse(0 0 at var(--reveal-x) var(--reveal-y));
-  transition: opacity 150ms ease, -webkit-clip-path 320ms cubic-bezier(0.2, 0.75, 0.25, 1), clip-path 320ms cubic-bezier(0.2, 0.75, 0.25, 1);
+  -webkit-clip-path: polygon(
+    0 var(--reveal-y), 14% var(--reveal-y), 30% var(--reveal-y),
+    48% var(--reveal-y), 66% var(--reveal-y), 84% var(--reveal-y),
+    100% var(--reveal-y), 100% var(--reveal-y), 82% var(--reveal-y),
+    63% var(--reveal-y), 43% var(--reveal-y), 22% var(--reveal-y),
+    0 var(--reveal-y)
+  );
+  clip-path: polygon(
+    0 var(--reveal-y), 14% var(--reveal-y), 30% var(--reveal-y),
+    48% var(--reveal-y), 66% var(--reveal-y), 84% var(--reveal-y),
+    100% var(--reveal-y), 100% var(--reveal-y), 82% var(--reveal-y),
+    63% var(--reveal-y), 43% var(--reveal-y), 22% var(--reveal-y),
+    0 var(--reveal-y)
+  );
+  transform: translate(var(--photo-shift-x), var(--photo-shift-y)) rotate(var(--photo-rotate)) scale(1.018);
+  filter: saturate(1.04) contrast(1.02) drop-shadow(0 0.8rem 1.4rem rgba(15, 30, 45, 0.14));
+  transition: opacity 130ms ease, -webkit-clip-path 360ms cubic-bezier(0.16, 0.8, 0.28, 1), clip-path 360ms cubic-bezier(0.16, 0.8, 0.28, 1), transform 180ms ease-out;
 }
 
 .landing-portrait.is-interacting .landing-portrait__photo,
 .landing-portrait:focus-visible .landing-portrait__photo,
 .landing-portrait:active .landing-portrait__photo {
   opacity: 1;
-  -webkit-clip-path: ellipse(var(--reveal-radius-x) var(--reveal-radius-y) at var(--reveal-x) var(--reveal-y));
-  clip-path: ellipse(var(--reveal-radius-x) var(--reveal-radius-y) at var(--reveal-x) var(--reveal-y));
+  -webkit-clip-path: polygon(
+    0 calc(var(--reveal-y) - var(--reveal-half) + var(--reveal-wave)),
+    14% calc(var(--reveal-y) - var(--reveal-half) - var(--reveal-wave)),
+    30% calc(var(--reveal-y) - var(--reveal-half)),
+    48% calc(var(--reveal-y) - var(--reveal-half) - var(--reveal-wave)),
+    66% calc(var(--reveal-y) - var(--reveal-half) + var(--reveal-wave)),
+    84% calc(var(--reveal-y) - var(--reveal-half) - var(--reveal-wave)),
+    100% calc(var(--reveal-y) - var(--reveal-half) + var(--reveal-wave)),
+    100% calc(var(--reveal-y) + var(--reveal-half) - var(--reveal-wave)),
+    82% calc(var(--reveal-y) + var(--reveal-half) + var(--reveal-wave)),
+    63% calc(var(--reveal-y) + var(--reveal-half)),
+    43% calc(var(--reveal-y) + var(--reveal-half) + var(--reveal-wave)),
+    22% calc(var(--reveal-y) + var(--reveal-half) - var(--reveal-wave)),
+    0 calc(var(--reveal-y) + var(--reveal-half) + var(--reveal-wave))
+  );
+  clip-path: polygon(
+    0 calc(var(--reveal-y) - var(--reveal-half) + var(--reveal-wave)),
+    14% calc(var(--reveal-y) - var(--reveal-half) - var(--reveal-wave)),
+    30% calc(var(--reveal-y) - var(--reveal-half)),
+    48% calc(var(--reveal-y) - var(--reveal-half) - var(--reveal-wave)),
+    66% calc(var(--reveal-y) - var(--reveal-half) + var(--reveal-wave)),
+    84% calc(var(--reveal-y) - var(--reveal-half) - var(--reveal-wave)),
+    100% calc(var(--reveal-y) - var(--reveal-half) + var(--reveal-wave)),
+    100% calc(var(--reveal-y) + var(--reveal-half) - var(--reveal-wave)),
+    82% calc(var(--reveal-y) + var(--reveal-half) + var(--reveal-wave)),
+    63% calc(var(--reveal-y) + var(--reveal-half)),
+    43% calc(var(--reveal-y) + var(--reveal-half) + var(--reveal-wave)),
+    22% calc(var(--reveal-y) + var(--reveal-half) - var(--reveal-wave)),
+    0 calc(var(--reveal-y) + var(--reveal-half) + var(--reveal-wave))
+  );
 }
 
 .landing-intro {
@@ -123,10 +173,12 @@
 
   h1 {
     margin: 0;
-    font-family: $header-font-family;
-    font-size: clamp(1.6rem, 3vw, 2.35rem);
-    font-weight: 300;
-    letter-spacing: -0.03em;
+    font-family: "Caveat", "Bradley Hand", "Segoe Print", cursive;
+    font-size: clamp(2.8rem, 5vw, 4rem);
+    font-weight: 600;
+    line-height: 0.95;
+    letter-spacing: -0.025em;
+    transform: rotate(-1.5deg);
   }
 
   p {
@@ -159,7 +211,7 @@
 @media (prefers-reduced-motion: reduce) {
   .landing,
   .landing-portrait::after,
-  .landing-portrait__photo {
+  .landing-portrait__image {
     animation: none;
     transition: none;
   }
