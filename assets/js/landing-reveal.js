@@ -23,7 +23,7 @@
   var reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var touchArmed = false;
   var animationFrame = null;
-  var pointerTrail = [];
+  var pointerQueue = [];
   var followDelay = 110;
   var width = 0;
   var height = 0;
@@ -41,9 +41,9 @@
     targetOpen: 0
   };
 
-  var tail = {
-    x: 0.5,
-    y: 0.36,
+  var deformation = {
+    x: 0,
+    y: 0,
     xVelocity: 0,
     yVelocity: 0
   };
@@ -82,24 +82,43 @@
     state[valueKey] += state[velocityKey];
   }
 
-  function springTail(valueKey, velocityKey, target) {
-    tail[velocityKey] = (target - tail[valueKey]) * 0.018;
-    tail[valueKey] += tail[velocityKey];
+  function updateDeformation() {
+    var targetX = state.xVelocity * width * 3.4;
+    var targetY = state.yVelocity * height * 3.4;
+    var targetLength = Math.sqrt((targetX * targetX) + (targetY * targetY));
+    var maximumLength = width * 0.14;
+
+    if (targetLength > maximumLength) {
+      targetX *= maximumLength / targetLength;
+      targetY *= maximumLength / targetLength;
+      targetLength = maximumLength;
+    }
+
+    var isMoving = targetLength > 0.75;
+    var stiffness = isMoving ? 0.16 : 0.045;
+    var damping = isMoving ? 0.68 : 0.84;
+
+    deformation.xVelocity += (targetX - deformation.x) * stiffness;
+    deformation.yVelocity += (targetY - deformation.y) * stiffness;
+    deformation.xVelocity *= damping;
+    deformation.yVelocity *= damping;
+    deformation.x += deformation.xVelocity;
+    deformation.y += deformation.yVelocity;
   }
 
   function updateDelayedPointer(time) {
     var cutoff = time - followDelay;
 
-    if (!pointerTrail.length || pointerTrail[0].time > cutoff) {
+    if (!pointerQueue.length || pointerQueue[0].time > cutoff) {
       return;
     }
 
-    while (pointerTrail.length > 1 && pointerTrail[1].time <= cutoff) {
-      pointerTrail.shift();
+    while (pointerQueue.length > 1 && pointerQueue[1].time <= cutoff) {
+      pointerQueue.shift();
     }
 
-    var firstPoint = pointerTrail[0];
-    var secondPoint = pointerTrail[1];
+    var firstPoint = pointerQueue[0];
+    var secondPoint = pointerQueue[1];
 
     if (!secondPoint) {
       state.targetX = firstPoint.x;
@@ -118,13 +137,12 @@
     var phase = time * 0.0022;
     var pointCount = 32;
     var points = [];
-    var tailDeltaX = (tail.x * width) - centerX;
-    var tailDeltaY = (tail.y * height) - centerY;
-    var tailDistance = Math.sqrt((tailDeltaX * tailDeltaX) + (tailDeltaY * tailDeltaY));
-    var tailLength = clamp(tailDistance, 0, width * 0.24);
-    var directionX = tailDistance > 0.5 ? tailDeltaX / tailDistance : 0;
-    var directionY = tailDistance > 0.5 ? tailDeltaY / tailDistance : 0;
-    var tailStrength = clamp(tailLength / (width * 0.14), 0, 1);
+    var deformationLength = Math.sqrt(
+      (deformation.x * deformation.x) + (deformation.y * deformation.y)
+    );
+    var directionX = deformationLength > 0.5 ? deformation.x / deformationLength : 0;
+    var directionY = deformationLength > 0.5 ? deformation.y / deformationLength : 0;
+    var deformationStrength = clamp(deformationLength / (width * 0.14), 0, 1);
     var path = new Path2D();
     var index;
 
@@ -135,10 +153,22 @@
       var edgeFlow = (Math.sin((angle * 3) + phase) * 0.075)
         + (Math.sin((angle * 5) - (phase * 1.25)) * 0.045)
         + (Math.sin((angle * 2) + (phase * 0.72)) * 0.03);
+      var directionDot = (cosine * directionX) + (sine * directionY);
+      var forwardPull = Math.pow(Math.max(0, directionDot), 2.2) * deformationLength * 0.46;
+      var rearLag = Math.pow(Math.max(0, -directionDot), 2) * deformationLength * 0.68;
+      var sideInfluence = 1 - Math.abs(directionDot);
+      var sideCompression = 1 - (
+        deformationStrength * sideInfluence * sideInfluence * 0.11
+      );
+      var directionalOffset = forwardPull - rearLag;
 
       points.push({
-        x: centerX + (cosine * halfWidth * (1 + edgeFlow)),
-        y: centerY + (sine * halfHeight * (1 + (edgeFlow * 1.25)))
+        x: centerX
+          + (cosine * halfWidth * (1 + edgeFlow) * sideCompression)
+          + (directionX * directionalOffset),
+        y: centerY
+          + (sine * halfHeight * (1 + (edgeFlow * 1.25)) * sideCompression)
+          + (directionY * directionalOffset)
       });
     }
 
@@ -162,53 +192,6 @@
     }
 
     path.closePath();
-
-    if (tailLength > 2) {
-      var perpendicularX = -directionY;
-      var perpendicularY = directionX;
-      var directionRadius = 1 / Math.sqrt(
-        ((directionX * directionX) / (halfWidth * halfWidth))
-        + ((directionY * directionY) / (halfHeight * halfHeight))
-      );
-      var baseDistance = directionRadius * 0.22;
-      var baseHalfWidth = Math.min(halfWidth, halfHeight) * (0.5 - (tailStrength * 0.12));
-      var tipDistance = (directionRadius * 0.55) + tailLength;
-      var tipHalfWidth = Math.max(1.5, Math.min(halfWidth, halfHeight) * 0.045);
-      var baseX = centerX + (directionX * baseDistance);
-      var baseY = centerY + (directionY * baseDistance);
-      var tipX = centerX + (directionX * tipDistance);
-      var tipY = centerY + (directionY * tipDistance);
-      var firstControlDistance = directionRadius * 0.76;
-      var secondControlDistance = tipDistance - (tailLength * 0.2);
-
-      path.moveTo(
-        baseX + (perpendicularX * baseHalfWidth),
-        baseY + (perpendicularY * baseHalfWidth)
-      );
-      path.bezierCurveTo(
-        centerX + (directionX * firstControlDistance) + (perpendicularX * baseHalfWidth * 0.72),
-        centerY + (directionY * firstControlDistance) + (perpendicularY * baseHalfWidth * 0.72),
-        centerX + (directionX * secondControlDistance) + (perpendicularX * tipHalfWidth * 1.8),
-        centerY + (directionY * secondControlDistance) + (perpendicularY * tipHalfWidth * 1.8),
-        tipX + (perpendicularX * tipHalfWidth),
-        tipY + (perpendicularY * tipHalfWidth)
-      );
-      path.quadraticCurveTo(
-        tipX + (directionX * Math.min(6, tailLength * 0.06)),
-        tipY + (directionY * Math.min(6, tailLength * 0.06)),
-        tipX - (perpendicularX * tipHalfWidth),
-        tipY - (perpendicularY * tipHalfWidth)
-      );
-      path.bezierCurveTo(
-        centerX + (directionX * secondControlDistance) - (perpendicularX * tipHalfWidth * 1.8),
-        centerY + (directionY * secondControlDistance) - (perpendicularY * tipHalfWidth * 1.8),
-        centerX + (directionX * firstControlDistance) - (perpendicularX * baseHalfWidth * 0.72),
-        centerY + (directionY * firstControlDistance) - (perpendicularY * baseHalfWidth * 0.72),
-        baseX - (perpendicularX * baseHalfWidth),
-        baseY - (perpendicularY * baseHalfWidth)
-      );
-      path.closePath();
-    }
 
     return path;
   }
@@ -235,7 +218,7 @@
     maskContext.clearRect(0, 0, width, height);
 
     layerContext.globalCompositeOperation = "source-over";
-    layerContext.globalAlpha = 1;
+    layerContext.globalAlpha = clamp(easedOpen * 1.08, 0, 1);
     var sourceY = photo.naturalHeight * sourceTopCrop;
     var sourceHeight = photo.naturalHeight - sourceY;
 
@@ -254,7 +237,8 @@
     maskContext.save();
     maskContext.filter = reducedMotion ? "none" : "blur(4px)";
     maskContext.fillStyle = "#fff";
-    maskContext.globalAlpha = clamp(easedOpen * 1.08, 0, 1);
+    maskContext.globalAlpha = 1;
+
     maskContext.fill(revealPath);
     maskContext.restore();
 
@@ -297,16 +281,15 @@
       state.xVelocity = 0;
       state.yVelocity = 0;
       state.openVelocity = 0;
-      tail.x = state.x;
-      tail.y = state.y;
-      tail.xVelocity = 0;
-      tail.yVelocity = 0;
+      deformation.x = 0;
+      deformation.y = 0;
+      deformation.xVelocity = 0;
+      deformation.yVelocity = 0;
     } else {
       spring("x", "xVelocity", state.targetX, 0.16, 0.7);
       spring("y", "yVelocity", state.targetY, 0.16, 0.7);
       spring("open", "openVelocity", state.targetOpen, 0.07, 0.79);
-      springTail("x", "xVelocity", state.x);
-      springTail("y", "yVelocity", state.y);
+      updateDeformation();
     }
 
     context.clearRect(0, 0, width, height);
@@ -318,19 +301,19 @@
       || Math.abs(state.y - state.targetY) > 0.001
       || Math.abs(state.xVelocity) > 0.001
       || Math.abs(state.yVelocity) > 0.001
-      || Math.abs(tail.x - state.x) > 0.001
-      || Math.abs(tail.y - state.y) > 0.001
-      || Math.abs(tail.xVelocity) > 0.001
-      || Math.abs(tail.yVelocity) > 0.001;
+      || Math.abs(deformation.x) > 0.1
+      || Math.abs(deformation.y) > 0.1
+      || Math.abs(deformation.xVelocity) > 0.1
+      || Math.abs(deformation.yVelocity) > 0.1;
 
     if (state.targetOpen > 0 || unsettled) {
       animationFrame = window.requestAnimationFrame(render);
     } else {
       animationFrame = null;
-      tail.x = state.x;
-      tail.y = state.y;
-      tail.xVelocity = 0;
-      tail.yVelocity = 0;
+      deformation.x = 0;
+      deformation.y = 0;
+      deformation.xVelocity = 0;
+      deformation.yVelocity = 0;
       context.clearRect(0, 0, width, height);
     }
   }
@@ -346,14 +329,14 @@
     var nextX = clamp((event.clientX - bounds.left) / bounds.width, 0.06, 0.94);
     var nextY = clamp((event.clientY - bounds.top) / bounds.height, 0.06, 0.94);
 
-    pointerTrail.push({
+    pointerQueue.push({
       x: nextX,
       y: nextY,
       time: window.performance.now()
     });
 
-    if (pointerTrail.length > 48) {
-      pointerTrail.shift();
+    if (pointerQueue.length > 48) {
+      pointerQueue.shift();
     }
 
     startAnimation();
@@ -366,7 +349,7 @@
   }
 
   function closeReveal() {
-    pointerTrail = [];
+    pointerQueue = [];
     state.targetOpen = 0;
     state.targetX = 0.5;
     state.targetY = 0.36;
