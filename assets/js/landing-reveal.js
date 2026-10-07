@@ -22,6 +22,8 @@
   var reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var touchArmed = false;
   var animationFrame = null;
+  var pointerTrail = [];
+  var followDelay = 110;
   var width = 0;
   var height = 0;
   var pixelRatio = 1;
@@ -72,8 +74,35 @@
     state[valueKey] += state[velocityKey];
   }
 
+  function updateDelayedPointer(time) {
+    var cutoff = time - followDelay;
+
+    if (!pointerTrail.length || pointerTrail[0].time > cutoff) {
+      return;
+    }
+
+    while (pointerTrail.length > 1 && pointerTrail[1].time <= cutoff) {
+      pointerTrail.shift();
+    }
+
+    var firstPoint = pointerTrail[0];
+    var secondPoint = pointerTrail[1];
+
+    if (!secondPoint) {
+      state.targetX = firstPoint.x;
+      state.targetY = firstPoint.y;
+      return;
+    }
+
+    var duration = secondPoint.time - firstPoint.time;
+    var progress = duration > 0 ? clamp((cutoff - firstPoint.time) / duration, 0, 1) : 1;
+
+    state.targetX = firstPoint.x + ((secondPoint.x - firstPoint.x) * progress);
+    state.targetY = firstPoint.y + ((secondPoint.y - firstPoint.y) * progress);
+  }
+
   function createFluidPath(centerX, centerY, halfWidth, halfHeight, time, phaseOffset) {
-    var phase = (time * 0.0034) + phaseOffset;
+    var phase = (time * 0.0022) + phaseOffset;
     var pointCount = 24;
     var points = [];
     var velocityX = state.xVelocity * width;
@@ -138,9 +167,9 @@
     var centerX = state.x * width;
     var centerY = state.y * height;
     var motionTime = reducedMotion ? 0 : time;
-    var breathing = reducedMotion ? 0 : Math.sin(time * 0.0024) * 0.045;
-    var halfWidth = width * (0.012 + (easedOpen * 0.238)) * (1 + breathing);
-    var halfHeight = height * (0.003 + (easedOpen * 0.072)) * (1 + (breathing * 0.7));
+    var breathing = reducedMotion ? 0 : Math.sin(time * 0.0018) * 0.045;
+    var halfWidth = width * (0.008 + (easedOpen * 0.16)) * (1 + breathing);
+    var halfHeight = height * (0.006 + (easedOpen * 0.095)) * (1 + (breathing * 0.7));
     var revealPath = createFluidPath(centerX, centerY, halfWidth, halfHeight, motionTime, 0);
 
     layerContext.clearRect(0, 0, width, height);
@@ -186,6 +215,7 @@
 
   function render(time) {
     resizeCanvas();
+    updateDelayedPointer(time || 0);
 
     if (reducedMotion) {
       state.x = state.targetX;
@@ -195,8 +225,8 @@
       state.yVelocity = 0;
       state.openVelocity = 0;
     } else {
-      spring("x", "xVelocity", state.targetX, 0.055, 0.82);
-      spring("y", "yVelocity", state.targetY, 0.055, 0.82);
+      spring("x", "xVelocity", state.targetX, 0.16, 0.7);
+      spring("y", "yVelocity", state.targetY, 0.16, 0.7);
       spring("open", "openVelocity", state.targetOpen, 0.07, 0.79);
     }
 
@@ -226,9 +256,19 @@
 
   function setPointer(event) {
     var bounds = portrait.getBoundingClientRect();
+    var nextX = clamp((event.clientX - bounds.left) / bounds.width, 0.06, 0.94);
+    var nextY = clamp((event.clientY - bounds.top) / bounds.height, 0.06, 0.94);
 
-    state.targetX = clamp((event.clientX - bounds.left) / bounds.width, 0.06, 0.94);
-    state.targetY = clamp((event.clientY - bounds.top) / bounds.height, 0.06, 0.94);
+    pointerTrail.push({
+      x: nextX,
+      y: nextY,
+      time: window.performance.now()
+    });
+
+    if (pointerTrail.length > 48) {
+      pointerTrail.shift();
+    }
+
     startAnimation();
   }
 
@@ -239,6 +279,7 @@
   }
 
   function closeReveal() {
+    pointerTrail = [];
     state.targetOpen = 0;
     state.targetX = 0.5;
     state.targetY = 0.36;
