@@ -74,36 +74,52 @@
 
   function createFluidPath(centerX, centerY, halfWidth, halfHeight, time, phaseOffset) {
     var phase = (time * 0.0034) + phaseOffset;
-    var left = centerX - halfWidth;
-    var right = centerX + halfWidth;
-    var topWaveA = Math.sin(phase) * halfHeight * 0.24;
-    var topWaveB = Math.sin((phase * 1.37) + 1.1) * halfHeight * 0.16;
-    var bottomWaveA = Math.sin((phase * 1.19) + 2.2) * halfHeight * 0.22;
-    var bottomWaveB = Math.sin((phase * 1.53) + 3.4) * halfHeight * 0.15;
-    var sideWave = Math.sin((phase * 0.83) + 0.7) * halfHeight * 0.18;
+    var pointCount = 24;
+    var points = [];
+    var velocityX = state.xVelocity * width;
+    var velocityY = state.yVelocity * height;
+    var velocityLength = Math.sqrt((velocityX * velocityX) + (velocityY * velocityY));
+    var directionX = velocityLength > 0.001 ? velocityX / velocityLength : 0;
+    var directionY = velocityLength > 0.001 ? velocityY / velocityLength : 0;
+    var trailLength = clamp(velocityLength * 7, 0, width * 0.055);
     var path = new Path2D();
+    var index;
 
-    path.moveTo(left, centerY + sideWave);
-    path.bezierCurveTo(
-      left + (halfWidth * 0.05), centerY - (halfHeight * 0.58) + topWaveA,
-      centerX - (halfWidth * 0.5), centerY - halfHeight + topWaveB,
-      centerX, centerY - halfHeight - topWaveA
+    for (index = 0; index < pointCount; index += 1) {
+      var angle = (Math.PI * 2 * index) / pointCount;
+      var cosine = Math.cos(angle);
+      var sine = Math.sin(angle);
+      var edgeFlow = (Math.sin((angle * 3) + phase) * 0.075)
+        + (Math.sin((angle * 5) - (phase * 1.25)) * 0.045)
+        + (Math.sin((angle * 2) + (phase * 0.72)) * 0.03);
+      var dragDot = (cosine * directionX) + (sine * directionY);
+      var trailingEdge = Math.max(0, -dragDot) * trailLength;
+
+      points.push({
+        x: centerX + (cosine * halfWidth * (1 + edgeFlow)) - (directionX * trailingEdge),
+        y: centerY + (sine * halfHeight * (1 + (edgeFlow * 1.25))) - (directionY * trailingEdge)
+      });
+    }
+
+    var lastPoint = points[pointCount - 1];
+    var firstPoint = points[0];
+    path.moveTo(
+      (lastPoint.x + firstPoint.x) * 0.5,
+      (lastPoint.y + firstPoint.y) * 0.5
     );
-    path.bezierCurveTo(
-      centerX + (halfWidth * 0.5), centerY - halfHeight + topWaveA,
-      right - (halfWidth * 0.05), centerY - (halfHeight * 0.58) - topWaveB,
-      right, centerY - sideWave
-    );
-    path.bezierCurveTo(
-      right - (halfWidth * 0.05), centerY + (halfHeight * 0.58) + bottomWaveA,
-      centerX + (halfWidth * 0.5), centerY + halfHeight - bottomWaveB,
-      centerX, centerY + halfHeight + bottomWaveA
-    );
-    path.bezierCurveTo(
-      centerX - (halfWidth * 0.5), centerY + halfHeight - bottomWaveA,
-      left + (halfWidth * 0.05), centerY + (halfHeight * 0.58) + bottomWaveB,
-      left, centerY + sideWave
-    );
+
+    for (index = 0; index < pointCount; index += 1) {
+      var currentPoint = points[index];
+      var nextPoint = points[(index + 1) % pointCount];
+
+      path.quadraticCurveTo(
+        currentPoint.x,
+        currentPoint.y,
+        (currentPoint.x + nextPoint.x) * 0.5,
+        (currentPoint.y + nextPoint.y) * 0.5
+      );
+    }
+
     path.closePath();
 
     return path;
