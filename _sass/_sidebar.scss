@@ -107,7 +107,6 @@
   object-fit: cover;
   border-radius: 50%;
   border: 1px solid rgba(215, 216, 216, 0.5);
-  transition: opacity 0.32s ease, transform 0.4s ease;
 
   @include breakpoint($large) {
     padding: 5px;
@@ -118,25 +117,16 @@
 .author__avatar-image--hover {
   position: absolute;
   inset: 0;
-  opacity: 0;
-  transform: scale(0.97);
+  display: none;
 }
 
 .author__avatar--swap:hover {
   .author__avatar-image--default {
-    opacity: 0;
-    transform: scale(1.03);
+    display: none;
   }
 
   .author__avatar-image--hover {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .author__avatar-image {
-    transition: none;
+    display: block;
   }
 }
 
