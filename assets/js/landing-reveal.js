@@ -24,6 +24,7 @@
   var touchArmed = false;
   var animationFrame = null;
   var pointerQueue = [];
+  var lastPointerMoveTime = 0;
   var followDelay = 110;
   var width = 0;
   var height = 0;
@@ -82,7 +83,7 @@
     state[valueKey] += state[velocityKey];
   }
 
-  function updateDeformation() {
+  function updateDeformation(time) {
     var horizontalLag = (state.targetX - state.x) * width;
     var verticalLag = (state.targetY - state.y) * height;
     var horizontalMomentum = state.xVelocity * width;
@@ -91,6 +92,13 @@
     var targetY = (verticalLag * 2.8) + (verticalMomentum * 7.5);
     var targetLength = Math.sqrt((targetX * targetX) + (targetY * targetY));
     var maximumLength = Math.min(width, height) * 0.24;
+    var pointerIsMoving = (time - lastPointerMoveTime) < 90;
+
+    if (!pointerIsMoving) {
+      targetX = 0;
+      targetY = 0;
+      targetLength = 0;
+    }
 
     if (targetLength > maximumLength) {
       targetX *= maximumLength / targetLength;
@@ -98,9 +106,8 @@
       targetLength = maximumLength;
     }
 
-    var isMoving = targetLength > 0.75;
-    var stiffness = isMoving ? 0.22 : 0.055;
-    var damping = isMoving ? 0.7 : 0.82;
+    var stiffness = pointerIsMoving ? 0.22 : 0.012;
+    var damping = pointerIsMoving ? 0.7 : 0.88;
 
     deformation.xVelocity += (targetX - deformation.x) * stiffness;
     deformation.yVelocity += (targetY - deformation.y) * stiffness;
@@ -301,7 +308,7 @@
       spring("x", "xVelocity", state.targetX, 0.16, 0.7);
       spring("y", "yVelocity", state.targetY, 0.16, 0.7);
       spring("open", "openVelocity", state.targetOpen, 0.07, 0.79);
-      updateDeformation();
+      updateDeformation(time || 0);
     }
 
     context.clearRect(0, 0, width, height);
@@ -340,11 +347,14 @@
     var bounds = portrait.getBoundingClientRect();
     var nextX = clamp((event.clientX - bounds.left) / bounds.width, 0.06, 0.94);
     var nextY = clamp((event.clientY - bounds.top) / bounds.height, 0.06, 0.94);
+    var pointerTime = window.performance.now();
+
+    lastPointerMoveTime = pointerTime;
 
     pointerQueue.push({
       x: nextX,
       y: nextY,
-      time: window.performance.now()
+      time: pointerTime
     });
 
     if (pointerQueue.length > 48) {
