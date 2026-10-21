@@ -14,8 +14,8 @@
 
 - image: /images/photography/indianapolis-alabama-street.webp
   thumbnail: /images/photography/indianapolis-alabama-street-thumb.webp
-  width: 1000
-  height: 687
+  width: 687
+  height: 1000
   location: Indianapolis
   alt: Downtown Indianapolis at Alabama Street in blue evening light
 
