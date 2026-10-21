@@ -256,6 +256,12 @@
             -ms-transform: scaleX(1);
                 transform: scaleX(1); /* reveal*/
       }
+
+      &[aria-current="page"]:before {
+        -webkit-transform: scaleX(1);
+            -ms-transform: scaleX(1);
+                transform: scaleX(1);
+      }
     }
   }
 
@@ -334,6 +340,37 @@
 
       &:last-child {
         border-bottom: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 37.5em) {
+  .greedy-nav {
+    width: 100%;
+    min-width: 0;
+    gap: 0.6rem;
+
+    a {
+      margin: 0;
+    }
+
+    .site-logo {
+      flex: 0 0 auto;
+
+      &__text {
+        font-size: 1.8rem;
+      }
+    }
+
+    .visible-links {
+      min-width: 0;
+      gap: clamp(0.55rem, 2.8vw, 0.9rem);
+
+      a {
+        margin: 0;
+        font-size: clamp(0.76rem, 3vw, 0.9rem);
+        white-space: nowrap;
       }
     }
   }

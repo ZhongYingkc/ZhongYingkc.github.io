@@ -1,6 +1,8 @@
 ---
 permalink: /about/
 title: "Wing🪽"
+seo_title: About
+description: "About Ying (Wing) Zhong, an HCI PhD student at Indiana University working on empathic computing, human-AI interaction, and immersive technologies."
 excerpt: ""
 author_profile: true
 ---
@@ -67,5 +69,4 @@ I completed my MA in Film Production Studies and BEng in Digital Media Technolog
 - *2024/12*, National Scholarship (Top 3%)
 - *2022/01 - 2022/03*, Professional Photography Volunteer, *Beijing Olympic and Paralympic Winter Games*
 - *2019/05 - 2020/12*, Technical Volunteer, *International Student Film and Video Festival (ISFVF)*
-
 

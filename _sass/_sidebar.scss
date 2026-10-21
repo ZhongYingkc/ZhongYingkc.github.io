@@ -328,3 +328,39 @@
     display: none;
   }
 }
+
+@media (max-width: 37.5em) {
+  .profile_box {
+    display: grid;
+    grid-template-columns: 68px minmax(0, 1fr) auto;
+    gap: 0.75rem;
+    width: 100%;
+  }
+
+  .author__avatar {
+    width: 68px;
+    height: 68px;
+    min-width: 0;
+  }
+
+  .author__content {
+    min-width: 0;
+    padding-left: 0;
+  }
+
+  .author__bio {
+    overflow-wrap: anywhere;
+  }
+
+  .author__urls-wrapper {
+    min-width: 2rem;
+    margin-left: 0;
+  }
+
+  .author__urls_sm {
+    display: grid;
+    gap: 0.3rem;
+    padding: 0;
+    font-size: 1.4em;
+  }
+}

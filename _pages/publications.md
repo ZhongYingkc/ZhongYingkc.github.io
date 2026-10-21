@@ -1,6 +1,7 @@
 ---
 permalink: /publications/
 title: Publications
+description: "Selected publications by Ying (Wing) Zhong on cybersickness, visual attention, and cinematic virtual reality."
 excerpt: ""
 author_profile: true
 layout: default
@@ -25,10 +26,12 @@ classes: wide
 
 You can find all my articles on my <a href="{{author.googlescholar}}">Google Scholar profile</a>.
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Cybersickness</div><img src='/images/handCS.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Cybersickness</div><img src='/images/handCS.png' alt="Diagram of the cybersickness and postural behavior study" width="100%" loading="lazy" decoding="async"></div></div>
 <div class='paper-box-text' markdown="1">
 
 <h4>The Correlation Analysis Between Cybersickness and Postural Behavior in Immersive VR Experience</h4>
+
+<p class="paper-box-venue">ICME 2024</p>
 
 **Ying Zhong**, Ke-Ao Zhao, Leping Zhang, Fangming Zhao, Wentao Wei and Feilin Han
 
@@ -38,10 +41,12 @@ You can find all my articles on my <a href="{{author.googlescholar}}">Google Sch
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Cinematic VR</div><img src='/images/viewbehavior.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Cinematic VR</div><img src='/images/viewbehavior.png' alt="Visualization of visual attention behavior in panoramic video" width="100%" loading="lazy" decoding="async"></div></div>
 <div class='paper-box-text' markdown="1">
 
 <h4>An Analytical Study of Visual Attention Behavior in Viewing Panoramic Video</h4>
+
+<p class="paper-box-venue">HCMA 2023</p>
 
 Feilin Han, **Ying Zhong** and Ke-Ao Zhao
 
@@ -51,10 +56,12 @@ Feilin Han, **Ying Zhong** and Ke-Ao Zhao
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Cinematic VR</div><img src='/images/cvr.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Cinematic VR</div><img src='/images/cvr.png' alt="Diagram of the cinematic VR viewing experience study" width="100%" loading="lazy" decoding="async"></div></div>
 <div class='paper-box-text' markdown="1">
 
 <h4>Evaluating the Effect of Cinematography on the Viewing Experience in Immersive Environment</h4>
+
+<p class="paper-box-venue">ICME 2022</p>
 
 Feilin Han, **Ying Zhong** and Minxi Zhou
 

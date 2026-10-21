@@ -8,6 +8,9 @@
 # Site Settings
 title                    : "Ying Zhong"
 description              : "HCI PhD Student, IU"
+url                      : "https://zhongyingkc.github.io"
+baseurl                  : ""
+og_image                 : "/images/landing-line-art.jpeg"
 repository               : "ZhongYingkc/ZhongYingkc.github.io"
 google_scholar_stats_use_cdn : true
 
