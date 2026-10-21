@@ -1,0 +1,111 @@
+- image: /images/photography/indianapolis-terrace.webp
+  thumbnail: /images/photography/indianapolis-terrace-thumb.webp
+  width: 687
+  height: 1000
+  location: Indianapolis
+  alt: Sunlit modernist terrace in Indianapolis photographed in black and white
+
+- image: /images/photography/indianapolis-skyline.webp
+  thumbnail: /images/photography/indianapolis-skyline-thumb.webp
+  width: 1000
+  height: 687
+  location: Indianapolis
+  alt: Indianapolis skyline beneath large white clouds
+
+- image: /images/photography/indianapolis-alabama-street.webp
+  thumbnail: /images/photography/indianapolis-alabama-street-thumb.webp
+  width: 1000
+  height: 687
+  location: Indianapolis
+  alt: Downtown Indianapolis at Alabama Street in blue evening light
+
+- image: /images/photography/toronto-statue.webp
+  thumbnail: /images/photography/toronto-statue-thumb.webp
+  width: 683
+  height: 1000
+  location: Toronto
+  alt: Bronze figure and birds framed by circular metal lines in Toronto
+
+- image: /images/photography/toronto-street.webp
+  thumbnail: /images/photography/toronto-street-thumb.webp
+  width: 683
+  height: 1000
+  location: Toronto
+  alt: Cyclists passing a warm brick building on a Toronto street
+
+- image: /images/photography/tokyo-temple.webp
+  thumbnail: /images/photography/tokyo-temple-thumb.webp
+  width: 669
+  height: 1000
+  location: Tokyo
+  alt: Wooden temple architecture and a quiet stone path in Tokyo
+
+- image: /images/photography/yantai-room.webp
+  thumbnail: /images/photography/yantai-room-thumb.webp
+  width: 1000
+  height: 665
+  location: Yantai, Shandong
+  alt: Sunlight entering an empty room through old windows in Yantai
+
+- image: /images/photography/yantai-shore.webp
+  thumbnail: /images/photography/yantai-shore-thumb.webp
+  width: 1000
+  height: 665
+  location: Yantai, Shandong
+  alt: Two people standing on a wide beach beneath a deep blue sky in Yantai
+
+- image: /images/photography/hongkong-beijing-double-exposure.webp
+  thumbnail: /images/photography/hongkong-beijing-double-exposure-thumb.webp
+  width: 675
+  height: 1000
+  location: Hong Kong / Beijing
+  alt: Double-exposure portrait combining street signs from Hong Kong and Beijing
+
+- image: /images/photography/macau-portrait.webp
+  thumbnail: /images/photography/macau-portrait-thumb.webp
+  width: 1000
+  height: 668
+  location: Macau (By my Mom)
+  alt: Grainy black-and-white portrait by the sea in Macau
+
+- image: /images/photography/anaya-sunrise.webp
+  thumbnail: /images/photography/anaya-sunrise-thumb.webp
+  width: 1000
+  height: 671
+  location: Anaya
+  alt: A lone figure watching the sunrise over the sea at Anaya in Qinhuangdao
+
+- image: /images/photography/anaya-sunrise-close.webp
+  thumbnail: /images/photography/anaya-sunrise-close-thumb.webp
+  width: 750
+  height: 1000
+  location: Anaya
+  alt: Orange sunrise reflected across the waves at Anaya
+
+- image: /images/photography/anaya-sunrise-friend.webp
+  thumbnail: /images/photography/anaya-sunrise-friend-thumb.webp
+  width: 666
+  height: 1000
+  location: Anaya (By my friend)
+  alt: A person standing on the beach beneath a bright orange sunrise at Anaya
+
+- image: /images/photography/beijing-snow-bikes.webp
+  thumbnail: /images/photography/beijing-snow-bikes-thumb.webp
+  width: 1000
+  height: 675
+  location: Beijing
+  alt: Shared bicycles covered in fresh snow at night in Beijing
+
+- image: /images/photography/beijing-flight-path.webp
+  thumbnail: /images/photography/beijing-flight-path-thumb.webp
+  width: 1000
+  height: 750
+  location: Beijing
+  alt: A curved airplane trail passing above a solar streetlight in Beijing
+
+- image: /images/photography/beijing-film-academy-snow.webp
+  thumbnail: /images/photography/beijing-film-academy-snow-thumb.webp
+  width: 1000
+  height: 750
+  location: Beijing Film Academy
+  alt: Snow-covered cars and a blue streetlight at Beijing Film Academy at night
