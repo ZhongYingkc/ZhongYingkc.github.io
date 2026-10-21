@@ -2,9 +2,11 @@
 permalink: /about/
 title: "Wing🪽"
 seo_title: About
-description: "About Ying (Wing) Zhong, an HCI PhD student at Indiana University working on empathic computing, human-AI interaction, and immersive technologies."
+description: "About Ying (Wing) Zhong, an HCI PhD student at Indiana University, with selected publications on empathic computing, human-AI interaction, and immersive technologies."
 excerpt: ""
 author_profile: true
+redirect_from:
+  - /publications/
 ---
 
 {% if site.google_scholar_stats_use_cdn %}
@@ -60,6 +62,54 @@ I completed my MA in Film Production Studies and BEng in Digital Media Technolog
 - *2025/11*: Presenting my poster in the Luddy 25th Symposium
 - *2025/04*: Attending CHI25 in Yokohama
 
+<span class='anchor' id='publications'></span>
+
+# SELECTED PUBLICATIONS
+
+You can find all my articles on my <a href="{{author.googlescholar}}">Google Scholar profile</a>.
+
+<div class='paper-box'>
+<h2 class="paper-box-title">The Correlation Analysis Between Cybersickness and Postural Behavior in Immersive VR Experience</h2>
+<div class='paper-box-image'><div><div class="badge">Cybersickness</div><img src='/images/handCS.png' alt="Diagram of the cybersickness and postural behavior study" width="100%" loading="lazy" decoding="async"></div></div>
+<div class='paper-box-text' markdown="1">
+
+<p class="paper-box-venue">ICME 2024</p>
+
+**Ying Zhong**, Ke-Ao Zhao, Leping Zhang, Fangming Zhao, Wentao Wei and Feilin Han
+
+- This work investigates the relationship between cybersickness and hand posture behavior.
+- 📄[Paper](https://feilinh.cn/ICME2024.pdf)
+</div>
+</div>
+
+<div class='paper-box'>
+<h2 class="paper-box-title">An Analytical Study of Visual Attention Behavior in Viewing Panoramic Video</h2>
+<div class='paper-box-image'><div><div class="badge">Cinematic VR</div><img src='/images/viewbehavior.png' alt="Visualization of visual attention behavior in panoramic video" width="100%" loading="lazy" decoding="async"></div></div>
+<div class='paper-box-text' markdown="1">
+
+<p class="paper-box-venue">HCMA 2023</p>
+
+Feilin Han, **Ying Zhong** and Ke-Ao Zhao
+
+- This work investigates viewing behavior, summarize attention distribution regulations and derive practical insights into the aspects of learning decision-making for panorama production.
+- 📄[Paper](https://doi.org/10.1145/3606041.3618060)
+</div>
+</div>
+
+<div class='paper-box'>
+<h2 class="paper-box-title">Evaluating the Effect of Cinematography on the Viewing Experience in Immersive Environment</h2>
+<div class='paper-box-image'><div><div class="badge">Cinematic VR</div><img src='/images/cvr.png' alt="Diagram of the cinematic VR viewing experience study" width="100%" loading="lazy" decoding="async"></div></div>
+<div class='paper-box-text' markdown="1">
+
+<p class="paper-box-venue">ICME 2022</p>
+
+Feilin Han, **Ying Zhong** and Minxi Zhou
+
+- This work investigates the relationship between viewing experience and various factors in Cinematic VR, and proposes an attention–comfort–understanding analysis paradigm to help creators better capture viewers' attention and enhance narrative comprehension.
+- 📄[Paper](https://feilinh.cn/ICME2022.pdf)
+</div>
+</div>
+
 # EDUCATIONS
 - *2025/08 - Now*, PhD, Indiana University Indianapolis, IN
 - *2022/09 - 2025/07*, MA, Beijing Film Academy, Beijing
@@ -69,4 +119,3 @@ I completed my MA in Film Production Studies and BEng in Digital Media Technolog
 - *2024/12*, National Scholarship (Top 3%)
 - *2022/01 - 2022/03*, Professional Photography Volunteer, *Beijing Olympic and Paralympic Winter Games*
 - *2019/05 - 2020/12*, Technical Volunteer, *International Student Film and Video Festival (ISFVF)*
-
