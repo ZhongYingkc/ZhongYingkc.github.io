@@ -229,12 +229,18 @@
     margin: 0;
     padding: 2.5rem 0.8rem 0.7rem;
     color: #fff;
+    font-family: $sans-serif;
     font-size: $type-size-6;
     font-weight: 600;
     letter-spacing: 0.02em;
     line-height: 1.25;
     text-shadow: 0 1px 8px rgba(0, 0, 0, 0.55);
     background: linear-gradient(to top, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0));
+}
+
+.mfp-title,
+.mfp-counter {
+    font-family: $sans-serif;
 }
 
 .photography-gallery__item:hover img,

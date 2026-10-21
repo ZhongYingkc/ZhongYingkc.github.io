@@ -8,6 +8,21 @@ layout: default
 
 {% include base_path %}
 
+# PHOTOGRAPHY
+
+Selected photographs from places I have lived in and passed through. Click an image to view it full size.
+
+<div class="photography-gallery" aria-label="Photography gallery">
+{% for photo in site.data.photography %}
+  <figure class="photography-gallery__item">
+    <a class="image-popup photography-gallery__link" href="{{ photo.image | relative_url }}" title="{{ photo.location }}" aria-label="View photograph from {{ photo.location }} full size">
+      <img src="{{ photo.thumbnail | relative_url }}" alt="{{ photo.alt }}" width="{{ photo.width }}" height="{{ photo.height }}" loading="lazy" decoding="async">
+      <figcaption class="photography-gallery__caption">{{ photo.location }}</figcaption>
+    </a>
+  </figure>
+{% endfor %}
+</div>
+
 # DIGITAL MEDIA WORKS
 
 Click the images to see their video presentation.
@@ -25,19 +40,4 @@ Click the images to see their video presentation.
 </div>
 
 <div class='portfolio-box'><div class='portfolio-box-image'><div><div class="badge">Timelapse Photography</div><a href="https://www.bilibili.com/video/BV1cm411C71Q/"><picture><source srcset="/images/metropolitan.webp" type="image/webp"><img src='/images/metropolitan.png' alt="Metropolitan timelapse photography" width="2400" height="1022" loading="lazy" decoding="async"></picture></a></div></div>
-</div>
-
-# PHOTOGRAPHY
-
-Selected photographs from places I have lived in and passed through. Click an image to view it full size.
-
-<div class="photography-gallery" aria-label="Photography gallery">
-{% for photo in site.data.photography %}
-  <figure class="photography-gallery__item">
-    <a class="image-popup photography-gallery__link" href="{{ photo.image | relative_url }}" title="{{ photo.location }}" aria-label="View photograph from {{ photo.location }} full size">
-      <img src="{{ photo.thumbnail | relative_url }}" alt="{{ photo.alt }}" width="{{ photo.width }}" height="{{ photo.height }}" loading="lazy" decoding="async">
-      <figcaption class="photography-gallery__caption">{{ photo.location }}</figcaption>
-    </a>
-  </figure>
-{% endfor %}
 </div>
